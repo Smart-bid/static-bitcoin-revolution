@@ -36,6 +36,14 @@ export default class MidSection extends Component {
 
                 <div className="seperated-bg"></div>
 
+                <div className="reviews">
+                    <div className="container">
+                        <div className="reviews-list">
+
+                        </div>
+                    </div>
+                </div>
+
                 <div className="innersection">
                     <div className="content">
                         <div className="title">{version.mem_title}</div>
