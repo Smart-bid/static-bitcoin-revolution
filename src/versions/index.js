@@ -3,6 +3,21 @@ import bufft from './img/buffet.jpg'
 import oneil from './img/oneil.jpg'
 import seykota from './img/seykota.jpg'
 
+//Images For Articles on Main Page
+import firstArticleImg from './img/firstArticleImg.jpg'
+import secondArticleImg from './img/secondArticleImg.jpg'
+
+//Images for FACEBOOK Social Network Section
+import JoanneBowyer from './img/social-avatars/facebook-profile1.jpg'
+import StevenHerold from './img/social-avatars/facebook-profile2.jpg'
+import SylviaSchuler from './img/social-avatars/facebook-profile3.jpg'
+import RhondaLee from './img/social-avatars/facebook-profile4.jpg'
+
+
+import JuanitaBrewer from './img/social-avatars/twitter-profile1.jpg'
+import RudyPerkins from './img/social-avatars/twitter-profile2.jpg'
+import ClarkRoss from './img/social-avatars/twitter-profile3.jpg'
+
 export const dk = {
 
     disc: "- Tekstreklame -",
@@ -220,6 +235,7 @@ export const en = {
     topreg1: 'Yes!',
     topreg2: 'Unlock My Copy Of The Bitcoin Revolution',
     topreg3: ' the process.',
+    bottomRegTitle: 'Enter Your Details To Claim A Free Spot',
     fname: 'Your First name',
     lname: 'Your Last name',
     email: 'Your  E-mail Address',
@@ -269,42 +285,125 @@ export const en = {
     ],
 
     //Reviews
+    reviews_item: [
+        {
+            name: 'Andrew Parker',
+            descr: 'Between paying off debt and keeping up with living expenses, I could barely get by. I am so thankful that a friend invited me to the Bitcoin Revolution several months ago. $43,927 is in my account and I can’t believe my eyes. I see my future as brighter than ever before',
+        },
+        {
+            name: 'Laura Bilbe',
+            descr: 'I am astounded by my results! I never thought it would ever be possible get rid of all my debt, but here I am smiling nearly 30-days later. I couldn’t be happier to report my once hefting college loan is no more',
+        },
+        {
+            name: 'Thomas Wareing',
+            descr: 'It is my pleasure to join The Bitcoin Revolution several days ago. Since, I’ve made over 7,000 in only 5-days! I feel this is about to change my life. Thank you so much to all of you from The Bitcoin Revolution',
+        }
+    ],
+
+    //Article (Some Information)
+    article_list: [
+        {
+            title: 'Our Bitcoin Revolution Technology Monitors The World’s Financial Markets',
+            descr: 'Our massive data crunching mainframes spot patterns in the worlds markets. Normal people just like you receive an automated slice of the 7.8 trillion dollars that are traded every single day! Our FREE Ultimate Guide to Crypto Currency E-book breaks down crypto trading in an easy to understand format.',
+            img: firstArticleImg,
+        },
+        {
+            title: 'What\'s In The Box?',
+            descr: 'A Crypto Trading system with easy access technology from any computer or mobile device. PC, MAC, Android, IOS and others. Crypto Experts & Analysts working 24/7 to provide you with the best support and the most profitable cryptocurrency trades. With over 500 developers & team of Expert Strategy Traders from around the world, we offer a safe and profitable crypto trading system.',
+            img: secondArticleImg,
+        },
+    ],
+    socialProof: 'Social Proof',
+
+    //Social Networks FACEBOOK
+    facebook_list: [
+        {
+            img: JoanneBowyer,
+            personName: 'Joanne Bowyer',
+            minAgo: '8 min\' ago',
+            comment: 'I have never traded before, but the The Bitcoin Revolution makes it so easy. I never thought I would say this since the crypto world can be so complicated… but you do make it so easy The Bitcoin Revolution!',
+            likes: '384',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: StevenHerold,
+            personName: 'Steven Herold',
+            minAgo: '13 min\' ago',
+            comment: 'This is exactly what I\'ve been waiting for! Your educational support and high profiting system has got me hooked for life!',
+            likes: '24',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: SylviaSchuler,
+            personName: 'Sylvia Schuler',
+            minAgo: '29 min\' ago',
+            comment: 'On my first day, I’ve made over 900 Euros so I can truly say… Finally, I found something that delivers great results!',
+            likes: '67',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: RhondaLee,
+            personName: 'Rhonda Lee',
+            minAgo: '1 hour ago',
+            comment: 'Money in my account from day one, still can\'t believe it… I love your system and support The Bitcoin Revolution!',
+            likes: '12',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+    ],
+
+    //Social Networks TWITTER
+    twitter_list: [
+        {
+            img: JuanitaBrewer,
+            personName: 'Juanita Brewer',
+            socialLink: '@ Juanita_Brewer',
+            comment: 'The Bitcoin Revolution is the only service I can trust when it comes to such a complicated subject like crypto currencies!',
+            btnName: 'Follow',
+        },
+        {
+            img: RudyPerkins,
+            personName: 'Rudy Perkins',
+            socialLink: '@ Rudy _P',
+            comment: 'I’ve trade so many Crypto services but by far this is the most impressive one.',
+            btnName: 'Follow',
+        },
+        {
+            img: ClarkRoss,
+            personName: 'Clark Ross',
+            socialLink: '@ Ross34',
+            comment: 'Your EBook is FANTASTIC! Thank you for the gift. you guys are the best',
+            btnName: 'Follow',
+        },
+    ],
+
+    //About Us
+    aboutUsTitle: 'HIGH PROFITING & FREE CRYPTO TRADING SYSTEM',
+    aboutUsDescr: 'With the recent increase of global interest in the Cryptocurrency Trading World, new traders and new crypto users, have the complicated task of selecting the correct tools for them. Here at Bitcoin Revolution, we offer all our users free tools to help them profit big in the lucrative age of Cryptocurrencies. Rest assured that all you ever wanted to achieve from Crypto Trading, is at the tip of your fingers. Now you have the opportunity to be one step ahead of even the biggest traders in the world!',
+
+    //Bottom Information
+    bottomInformation: [
+        'HIGH RISK INVESTMENT WARNING: Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please click here to read a full risk warning. Bitcoin Revolution is a trading name of Bitcoin Revolution LTD, a Technology Services Company. Bitcoin Revolution does not gain or lose profits based on your trading results and operates as a technology company. Bitcoin Revolution is not a Financial Services firm and does not operate as a financial services firm.',
+        'We are required to tell potential investors that our software\'s past performance does not necessarily predict future results, therefore you should not speculate with capital that you cannot afford to lose.',
+        'USA REGULATION NOTICE: Option trading is not regulated within the United States. Bitcoin Revolution is not supervised or regulated by any financial agencies nor US agencies. Any unregulated trading activity by U.S. residents is considered unlawful. Bitcoin Revolution does not accept customers located within the United States or holding an American citizenship.',
+        'SITE RISK DISCLOSURE: Bitcoin Revolution does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in trading Forex, CFDs and Cryptocurrencies may not be suitable for all investors. Bitcoin Revolution doesn\'t retain responsibility for any trading losses you might face as a result of using the data hosted on this site.',
+        'We have placed cookies on your computer to help improve your experience when visiting this website. You can change cookie settings on your computer at any time. Use of this website indicates your acceptance of this website\'s Privacy Policy.',
+        '© 2018 All Rights Reserved - Bitcoin Revolution',
+    ],
+    visitorAmount: '247',
+    bottomVisitorNotification: 'People are watching this page',
 
     bottominfo: 'Your data is always protected with us. You can change your mind anytime by...',
     more: 'more',
     morebox: 'You can change your mind at any time by clicking on the unsubscribe link in the footer of any email you receive from us. We will treat your information with respect. By clicking above, you agree that we may process your information in accordance with these terms.',
 
-    mem_title: 'Famous names in trading',
-    mem_subtitle: 'There are a lot of big names in trading. Here is what some of the most famous traders have to say.',
-    mems: [
-        {
-            img: elder,
-            name: 'Alexander Elder',
-            text: 'You can be free. You can live and work anywhere in the world. You can be independent from routine and not answer to anybody.'
-        },
-        {
-            img: seykota,
-            name: 'Ed Seykota',
-            text: 'Win or lose, everybody gets what they want out of the market. Some people seem to like to lose, so they win by losing money.'
-        },
-        {
-            img: oneil,
-            name: 'William O’Neil',
-            text: 'What seems too high and risky to the majority generally goes higher and what seems low and cheap generally goes lower.'
-        },
-        {
-            img: bufft,
-            name: 'Warren Buffett',
-            text: 'You don\'t need to be a rocket scientist. Investing is not a game where the guy with the 160 IQ beats the guy with 130 IQ.'
-        },
-    ],
-    risk: [
-        'IMPORTANT:',
-        'Earnings and Legal Disclaimers',
-        'Earnings and income representations made by , (collectively “This Website” only used as aspirational examples of your earnings potential. The success of those in the testimonials and other examples are exceptional results and therefore are not intended as a guarantee that you or others will achieve the same results. Individual results will vary and are entirely dependent on your use of .',
-        'This Website is not responsible for your actions. You bear sole responsibility for your actions and decisions when using products and services and therefore you should always exercise caution and due diligence. You agree that this Website is not liable to you in any way for the results of using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions.',
-        'This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link.'
-    ],
     modal_title: 'Wait!',
     modal_sub: 'Before you leave...',
     modal_text1: 'The markets are moving fast. Don’t miss out on your chance to profit from the latest rises and falls.',

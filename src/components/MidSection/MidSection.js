@@ -39,50 +39,52 @@ export default class MidSection extends Component {
                 <div className="reviews">
                     <div className="container">
                         <div className="reviews-list">
-
+                            {
+                                version.reviews_item.map((item, index) => {
+                                    return (
+                                        <div className="review-item" id={index}>
+                                            <div className="wrap">
+                                                <h4 className="user-name">
+                                                    {item.name}
+                                                </h4>
+                                                <div className="descr">
+                                                    <p>
+                                                        {item.descr}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
 
-                <div className="innersection">
-                    <div className="content">
-                        <div className="title">{version.mem_title}</div>
-                        <div className="subtitle next">{version.mem_subtitle}</div>
-                        <div className="rows">
-                            <div className="top">
-                                {
-                                    version.mems.slice(0,2).map(item => {
-                                        return (
-                                            <div className="rich" key={item.name}>
-                                                <div className="column">
-                                                    <img src={item.img} alt={item.name}/>
-                                                </div>
-                                                <div className="column">
-                                                    <div className="name">{item.name}</div>
-                                                    <div className="text">{item.text}</div>
-                                                </div>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                            <div className="bottom">
+                <div className="articles-list">
+                    <div className="container">
+                        <div className="list">
                             {
-                                    version.mems.slice(2,4).map(item => {
-                                        return (
-                                            <div className="rich" key={item.name}>
-                                                <div className="column">
-                                                    <img src={item.img} alt={item.name}/>
+                                version.article_list.map((item, index) => {
+                                    return (
+                                        <div className="article-item" id={index}>
+                                            <div className="wrap">
+                                                <div className="info-col">
+                                                    <h4 className="user-name">
+                                                        {item.title}
+                                                    </h4>
+                                                    <p>
+                                                        {item.descr}
+                                                    </p>
                                                 </div>
-                                                <div className="column">
-                                                    <div className="name">{item.name}</div>
-                                                    <div className="text">{item.text}</div>
+                                                <div className="image">
+                                                    <img src={item.img} alt={item.title}/>
                                                 </div>
                                             </div>
-                                        )
-                                    })
-                                }
-                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
