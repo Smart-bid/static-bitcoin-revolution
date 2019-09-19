@@ -336,7 +336,7 @@
            }
        }
    }
-    .fixed-notification {
+   .fixed-notification {
         position: fixed;
         right: 0;
         left: 0;
@@ -353,6 +353,40 @@
             span {
                 font-size: 15px;
                 color: #ffffff;
+            }
+        }
+    }
+    .customers {
+        position: fixed;
+        left: 45px;
+        bottom: 80px;
+        z-index: 100;
+        .wrap {
+            padding: 10px;
+            border: 1px solid #cdcece;
+            border-radius: 10px;
+            background-color: #ffffff;
+            strong,
+            span {
+                display: block;
+            }
+            .flex {
+                display: flex;
+
+                .info {
+                    .name {
+                        font-size: 14px;
+                        margin-bottom: 3px;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .earn {
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
             }
         }
     }

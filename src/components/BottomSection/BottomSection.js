@@ -7,13 +7,21 @@ export default class BottomSection extends Component {
 
     constructor(props) {
         super(props);
+        //let randomInt = this.randomInteger(1, 10);
         this.state = {
+            //randomInt: randomInt,
             notificationClass: 'fixed-notification',
         };
         setInterval(() => {
             this.setState({notificationClass: (this.state.notificationClass === 'fixed-notification') ? 'fixed-notification blinks' : 'fixed-notification'})
+            //console.log(this.state.randomInt);
         }, 5000)
     }
+
+    //  randomInteger(min, max) {
+    //     let rand = 1 - 0.5 + Math.random() * (max - min + 1);
+    //     return Math.round(rand);
+    // }
 
     render() {
         let version = this.props.version;
@@ -64,6 +72,20 @@ export default class BottomSection extends Component {
                         <p>
                             {version.bottomInformation[5]}
                         </p>
+                    </div>
+                </div>
+                
+                <div className="customers">
+                    <div className="wrap">
+                        <div className="flex">
+                            <div className="image">
+                                <img src="" alt=""/>
+                            </div>
+                            <div className="info">
+                                <strong className="name">Marina Ahsanov</strong>
+                                <div className="earn">just earnd $481.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
