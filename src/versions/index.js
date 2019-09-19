@@ -24,6 +24,11 @@ import JuanitaBrewer from './img/social-avatars/twitter-profile1.jpg'
 import RudyPerkins from './img/social-avatars/twitter-profile2.jpg'
 import ClarkRoss from './img/social-avatars/twitter-profile3.jpg'
 
+//Images for Customers
+import da from './img/da.jpg'
+import ma from './img/ma.jpg'
+import gh from './img/gh.jpg'
+
 export const dk = {
 
     disc: "- Tekstreklame -",
@@ -405,6 +410,26 @@ export const en = {
     ],
     visitorAmount: '247',
     bottomVisitorNotification: 'People are watching this page',
+
+
+    //Customer Earnings
+    customer: [
+        {
+            img: ma,
+            name: 'Marina Ahsanov',
+            earn: 'just earnd $481.',
+        },
+        {
+            img: gh,
+            name: 'George Hale',
+            earn: 'just earnd $1,450.',
+        },
+        {
+            img: da,
+            name: 'Dedy Aliber',
+            earn: 'just earnd $627.',
+        },
+    ],
 
     bottominfo: 'Your data is always protected with us. You can change your mind anytime by...',
     more: 'more',

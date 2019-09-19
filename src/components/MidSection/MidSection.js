@@ -19,7 +19,7 @@ export default class MidSection extends Component {
                             {
                                 version.reviews_item.map((item, index) => {
                                     return (
-                                        <div className="review-item" id={index}>
+                                        <div className="review-item">
                                             <div className="wrap">
                                                 <h4 className="user-name">
                                                     {item.name}

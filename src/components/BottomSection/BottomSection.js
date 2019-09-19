@@ -7,21 +7,35 @@ export default class BottomSection extends Component {
 
     constructor(props) {
         super(props);
-        //let randomInt = this.randomInteger(1, 10);
+        var random = this.rand();
         this.state = {
-            //randomInt: randomInt,
+            random: random,
             notificationClass: 'fixed-notification',
         };
+
+        let version = this.props.version;
+
         setInterval(() => {
             this.setState({notificationClass: (this.state.notificationClass === 'fixed-notification') ? 'fixed-notification blinks' : 'fixed-notification'})
-            //console.log(this.state.randomInt);
         }, 5000)
     }
 
-    //  randomInteger(min, max) {
-    //     let rand = 1 - 0.5 + Math.random() * (max - min + 1);
-    //     return Math.round(rand);
-    // }
+    rand() {
+        const random = Math.floor(Math.random() * 3);
+        return random;
+    }
+    componentDidMount() {
+        const _this = this;
+        this.timer = setInterval(function(){
+            var random = _this.rand();
+            _this.setState({
+                random: random,
+            })
+        },1000)
+    }
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
 
     render() {
         let version = this.props.version;
@@ -75,15 +89,15 @@ export default class BottomSection extends Component {
                     </div>
                 </div>
 
-                <div className="customers">
+                <div className="how-much">
                     <div className="wrap">
                         <div className="flex">
                             <div className="image">
-                                <img src="" alt=""/>
+                                <img src={version.customer[this.state.random].img} alt=""/>
                             </div>
                             <div className="info">
-                                <strong className="name">Marina Ahsanov</strong>
-                                <div className="earn">just earnd $481.</div>
+                                <strong className="name">{version.customer[this.state.random].name}</strong>
+                                <div className="earn">{version.customer[this.state.random].earn}</div>
                             </div>
                         </div>
                     </div>
