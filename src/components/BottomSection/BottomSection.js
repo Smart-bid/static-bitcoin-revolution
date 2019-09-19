@@ -100,6 +100,7 @@ export default class BottomSection extends Component {
                                 <div className="earn">{version.customer[this.state.random].earn}</div>
                             </div>
                         </div>
+                        <span className="close"></span>
                     </div>
                 </div>
 

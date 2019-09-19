@@ -361,8 +361,12 @@
         left: 45px;
         bottom: 80px;
         z-index: 100;
+        @media(max-width: 991px) {
+            display: none !important;
+        }
         .wrap {
-            padding: 10px;
+            position: relative;
+            padding: 12px 12px 15px 0;
             border: 1px solid #cdcece;
             border-radius: 10px;
             background-color: #ffffff;
@@ -372,8 +376,12 @@
             }
             .flex {
                 display: flex;
-
+                .image {
+                    padding-left: 15px;
+                }
                 .info {
+                    padding-left: 20px;
+                    padding-right: 35px;
                     .name {
                         font-size: 14px;
                         margin-bottom: 3px;
@@ -386,6 +394,30 @@
                         font-size: 15px;
                         font-weight: 300;
                     }
+                }
+            }
+            .close {
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+                &:after,
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 14px;
+                    height: 2px;
+                    background-color: #cbced3;
+                    border-radius: 100px;
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                }
+                &:before {
+                    transform: rotate(45deg);
                 }
             }
         }
