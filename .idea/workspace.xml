@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
                 <element signature="e#2040#2790#0" />
@@ -281,7 +281,7 @@
       <workItem from="1568712618444" duration="3000" />
       <workItem from="1568739493442" duration="30831000" />
       <workItem from="1568874447793" duration="10784000" />
-      <workItem from="1568887799082" duration="3125000" />
+      <workItem from="1568887799082" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="Change 18.09">
       <created>1568880294172</created>
@@ -315,7 +315,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44743000" />
+    <option name="totallyTimeSpent" value="44837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#2040#2790#0" />
