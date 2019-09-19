@@ -75,7 +75,7 @@ export default class BottomSection extends Component {
                     </div>
                 </div>
 
-                git pull origin master {/*<div className="customers">*/}
+                /*<div className="customers">*/}
                 {/*    <div className="wrap">*/}
                 {/*        <div className="flex">*/}
                 {/*            <div className="image">*/}
