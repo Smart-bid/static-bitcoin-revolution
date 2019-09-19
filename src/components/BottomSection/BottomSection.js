@@ -74,20 +74,20 @@ export default class BottomSection extends Component {
                         </p>
                     </div>
                 </div>
-                
-                <div className="customers">
-                    <div className="wrap">
-                        <div className="flex">
-                            <div className="image">
-                                <img src="" alt=""/>
-                            </div>
-                            <div className="info">
-                                <strong className="name">Marina Ahsanov</strong>
-                                <div className="earn">just earnd $481.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                git pull origin master {/*<div className="customers">*/}
+                {/*    <div className="wrap">*/}
+                {/*        <div className="flex">*/}
+                {/*            <div className="image">*/}
+                {/*                <img src="" alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className="info">*/}
+                {/*                <strong className="name">Marina Ahsanov</strong>*/}
+                {/*                <div className="earn">just earnd $481.</div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
                 <div className={this.state.notificationClass} ref="msg">
                     <div className="wrap">
