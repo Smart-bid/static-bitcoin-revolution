@@ -39,9 +39,15 @@
                         max-width: 1140px;
                         margin-left: auto;
                         margin-right: auto;
+                        @media (max-width: 991px) {
+                            max-width: 750px;
+                        }
                         .flex {
                             display: flex;
                             justify-content: space-between;
+                            @media (max-width: 991px) {
+                                flex-wrap: wrap;
+                            }
                             input {
                                 display: block;
                                 width: 32%;
@@ -56,6 +62,9 @@
                                 outline: none;
                                 &:hover {
                                     border: 1px solid #efb95f;
+                                }
+                                @media (max-width: 991px) {
+                                    width: 100%;
                                 }
                             }
                         }
@@ -98,6 +107,9 @@
             margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
+            @media (max-width: 991px) {
+                max-width: 750px;
+            }
             .section-heading {
                 font-size: 38px;
                 font-weight: 300;
@@ -111,8 +123,14 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                @media (max-width: 991px) {
+                    flex-wrap: wrap;
+                }
                 .social {
                     width: 48%;
+                    @media (max-width: 991px) {
+                        width: 100%;
+                    }
                     .social-icon {
                         display: block;
                         width: 200px;
@@ -259,6 +277,9 @@
         background-position: 100% 50%;
         background-size: 50% auto;
         background-repeat: no-repeat;
+        @media (max-width: 768px) {
+            background-image: none;
+        }
         .container {
             max-width: 1170px;
             margin-left: auto;
@@ -267,6 +288,9 @@
             padding-right: 15px;
             .info {
                 max-width: 585px;
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
                 h3 {
                     font-size: 25px;
                     font-weight: 700;
@@ -317,8 +341,10 @@
         bottom: 0;
         background-color: #59af89;
         z-index: 9999;
-        //animation: 2s toggleNotification infinite ease-in-out;
         transition: .2s all;
+        &.blinks {
+            transform: translateY(100%);
+        }
         .wrap {
             padding: 12px 0;
             text-align: center;
@@ -327,17 +353,5 @@
                 color: #ffffff;
             }
         }
-    }
-}
-
-@keyframes toggleNotification {
-    0% {
-        transform: translateY(100%);
-    }
-    80% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100%);
     }
 }

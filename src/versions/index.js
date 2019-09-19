@@ -3,6 +3,12 @@ import bufft from './img/buffet.jpg'
 import oneil from './img/oneil.jpg'
 import seykota from './img/seykota.jpg'
 
+//
+
+import firstTeamMember from './img/team/1.jpg'
+import secondTeamMember from './img/team/2.jpg'
+import thirdTeamMember from './img/team/3.jpg'
+
 //Images For Articles on Main Page
 import firstArticleImg from './img/firstArticleImg.jpg'
 import secondArticleImg from './img/secondArticleImg.jpg'
@@ -13,7 +19,7 @@ import StevenHerold from './img/social-avatars/facebook-profile2.jpg'
 import SylviaSchuler from './img/social-avatars/facebook-profile3.jpg'
 import RhondaLee from './img/social-avatars/facebook-profile4.jpg'
 
-
+//Images for TWITTER Social Network Section
 import JuanitaBrewer from './img/social-avatars/twitter-profile1.jpg'
 import RudyPerkins from './img/social-avatars/twitter-profile2.jpg'
 import ClarkRoss from './img/social-avatars/twitter-profile3.jpg'
@@ -268,17 +274,17 @@ export const en = {
     team_title: 'Meet Our Team',
     team_members: [
         {
-            img: '../MidSection/team/1.jpg',
+            img: firstTeamMember,
             title: 'Charlie Vasquez',
             descr: 'our CTO, one of the main reasons our software is such a success among trader of all types. Charlie has said that with all of his experience as a highly seasoned programmer, this, is the best work he has ever done',
         },
         {
-            img: '../images/team/2.jpg',
+            img: secondTeamMember,
             title: 'Raul Thompson',
             descr: 'our Head Analyst, continuously cross references his long-term analysis with The Bitcoin Revolution algorithm to always assure our traders the best result possible',
         },
         {
-            img: '../images/team/3.jpg',
+            img: thirdTeamMember,
             title: 'Jane Fernandez',
             descr: 'our Head of Customer Support, is always standing by with her large team at her back to assist all our traders with any technical questions they might have. We always strives for 100% client satisfaction.',
         },

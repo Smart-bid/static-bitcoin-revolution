@@ -31,8 +31,6 @@ export default class TopSection extends Component {
     }
 
     componentDidMount() {
-
-
         setTimeout(() => {
             if (document.querySelector('.modalscreen') && window.innerWidth > 768) {
                 document.querySelector('.modalscreen').style.display = 'flex';

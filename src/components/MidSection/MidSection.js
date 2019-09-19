@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Team from "./Team"
+
 export default class MidSection extends Component {
     render() {
     let version = this.props.version;
@@ -7,32 +9,7 @@ export default class MidSection extends Component {
         return (
             <div className="MidSection">
 
-                <div className="team">
-                    <div className="container">
-                        <h3 className="title">{version.team_title}</h3>
-                        <div className="team-list">
-                            {
-                                version.team_members.map((item, index) => {
-                                    return (
-                                        <div className="item" key={index}>
-                                            <div className="wrap">
-                                                <div className="img">
-
-                                                </div>
-                                                <div className="descr">
-                                                    <h4>{item.title}</h4>
-                                                    <p>
-                                                        {item.descr}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
-                </div>
+                <Team version={this.props.version} />
 
                 <div className="seperated-bg"></div>
 

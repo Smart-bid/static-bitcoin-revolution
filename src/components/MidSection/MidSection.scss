@@ -33,29 +33,81 @@
             .team-list {
                 display: flex;
                 flex-wrap: wrap;
+                @media (max-width: 991px) {
+                    max-width: 750px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 .item {
                     width: 28%;
-                    margin-left: 2%;
-                    margin-right: 2%;
+                    margin-left: 1.75%;
+                    margin-right: 1.75%;
                     font-family: Arial, sans-serif;
-                    .descr {
-                        h4 {
-                            color: #2c467c;
-                            font-size: 19px;
-                            font-weight: 300;
-                            line-height: 22px;
-                            margin-top: 15px;
-                            margin-bottom: 0;
-                            text-align: center;
+                    @media (max-width: 991px) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .wrap {
+                        .img {
+                            position: relative;
+                            max-width: 200px;
+                            margin: 0 auto;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                left: 0;
+                                height: 100%;
+                                transition: all 380ms ease;
+                            }
+                            &:hover {
+                                &:before {
+                                    background-color: rgba(59, 89, 152, .84);
+                                }
+                                .absolute {
+                                    opacity: 1;
+                                }
+                            }
+                            img {
+                                display: block;
+                            }
+                            .absolute {
+                                opacity: 0;
+                                position: absolute;
+                                top: 30%;
+                                right: 0;
+                                left: 0;
+                                margin-left: auto;
+                                margin-right: auto;
+                                color: #fff;
+                                font-size: 26px;
+                                line-height: 31px;
+                                padding: 0 10px;
+                                text-align: center;
+                                transition: all 380ms ease;
+                            }
                         }
-                        p {
-                            font-size: 15px;
-                            line-height: 22px;
-                            margin-top: 15px;
-                            margin-bottom: 0;
-                            border-left: 5px solid #E2E2E2;
-                            padding: 10px 15px;
-                            border-radius: 20px 0;
+                        .descr {
+                            h4 {
+                                color: #2c467c;
+                                font-size: 19px;
+                                font-weight: 300;
+                                line-height: 22px;
+                                margin-top: 15px;
+                                margin-bottom: 0;
+                                text-align: center;
+                            }
+                            p {
+                                font-size: 15px;
+                                line-height: 22px;
+                                margin-top: 15px;
+                                margin-bottom: 0;
+                                border-left: 5px solid #E2E2E2;
+                                padding: 10px 15px;
+                                border-radius: 20px 0;
+                            }
                         }
                     }
                 }
@@ -89,6 +141,12 @@
             .reviews-list {
                 display: flex;
                 justify-content: space-between;
+                @media (max-width: 991px) {
+                    max-width: 750px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    flex-wrap: wrap;
+                }
                 .review-item {
                     max-width: 220px;
                     padding-top: 155px;
@@ -103,6 +161,10 @@
                     border-radius: 10px;
                     border: 1px solid #ffffff;
                     overflow: hidden;
+                    @media (max-width: 991px) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
                     &:hover {
                         border: 1px solid #28388b;
                     }
@@ -111,6 +173,9 @@
                     }
                     &:nth-child(2) {
                         background-image: url("../MidSection/images/testimonial-person2.jpg");
+                        @media (max-width: 991px) {
+                            background-position: center;
+                        }
                     }
                     &:last-child {
                         background-image: url("../MidSection/images/testimonial-person3.jpg");
@@ -148,14 +213,26 @@
             padding-left: 15px;
             padding-right: 15px;
             .list {
+                @media (max-width: 991px) {
+                    max-width: 750px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 .article-item {
                     padding: 50px 0;
                     .wrap {
                         display: flex;
                         padding-top: 15px;
+                        @media (max-width: 991px) {
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
                         .info-col {
                             max-width: 555px;
                             padding: 0 15px;
+                            @media (max-width: 991px) {
+                                max-width: 100%;
+                            }
                             .user-name {
                                 font-size: 21px;
                                 font-weight: 700;
@@ -163,6 +240,11 @@
                                 color: #295c79;
                                 margin-top: 23px;
                                 text-align: left;
+                                @media (max-width: 991px) {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    margin: 10px 0;
+                                }
                             }
                             p {
                                 font-size: 20px;
@@ -172,6 +254,9 @@
                                 margin-bottom: 15px;
                                 color: #12645f;
                                 text-align: left;
+                                @media (max-width: 991px) {
+                                    font-size: 16px;
+                                }
                             }
                         }
                         .image {
@@ -184,6 +269,9 @@
                     &:nth-child(2n) {
                         .wrap {
                             flex-direction: row-reverse;
+                            @media (max-width: 991px) {
+                                flex-direction: column-reverse;
+                            }
                             .info-col {
                                 .user-name {
                                     font-size: 25px;
@@ -192,6 +280,10 @@
                                 p {
                                     font-size: 17px;
                                     line-height: 23px;
+                                    @media (max-width: 991px) {
+                                        font-size: 15px;
+                                        line-height: 19px;
+                                    }
                                 }
                             }
                         }

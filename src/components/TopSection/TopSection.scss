@@ -19,16 +19,16 @@
         background-attachment: scroll, fixed;
 
         .top-reg {
-            width: 61.5%;
+            max-width: 1170px;
             margin: 0 auto;
             display: flex;
             @media (max-width: 1200px) {
                 width: 80%;
             }
-
-            @media (max-width: 768px) {
-                width: 90%;
-                flex-direction: column;
+            @media (max-width: 991px) {
+                width: 100%;
+                max-width: 750px;
+                flex-wrap: wrap;
             }
 
             .VideoPlayer {
@@ -38,10 +38,10 @@
                 background: #000000;
                 border-radius: 10px 10px 0 0;
                 @media (max-width: 1200px) {
-                    width: 44vw;
+                    width: 53vw;
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     width: 100%;
                 }
 
@@ -106,7 +106,11 @@
                 height: inherit;
                 margin-left: 1.4vw;
                 position: relative;
-                @media (max-width: 768px) {
+                @media (max-width: 1200px) {
+                    max-width: 295px;
+                }
+                @media (max-width: 991px) {
+                    max-width: 100%;
                     width: 100%;
                     margin-left: 0;
                 }

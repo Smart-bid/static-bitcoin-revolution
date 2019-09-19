@@ -14,24 +14,65 @@
     background-image: linear-gradient(180deg, #eaeaea, #fff);
     opacity: .9;
     transition: all 200ms ease;
+    @media (max-width: 991px) {
+        opacity: 1;
+        height: 230px;
+    }
+    @media (max-width: 768px) {
+        height: auto;
+        display: none;
+    }
+    @media (max-width: 479px) {
+        display: block;
+        position: relative;
+    }
     .content {
         display: flex;
         align-items: center;
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 479px) {
+            justify-content: center;
+        }
         & img {
             margin: 5px;
             max-width: 135px;
+            @media (max-width: 991px) {
+                max-width: 180px;
+            }
+            @media (max-width: 768px) {
+                max-width: 100px;
+                display: block;
+                margin: 5px 0;
+            }
         }
         .navigation {
             width: 100%;
+            @media (max-width: 991px) {
+                position: relative;
+                top: -55px;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
             ul {
                 display: flex;
                 justify-content: center;
                 margin: 0;
                 padding: 0;
+                @media (max-width: 991px) {
+                    flex-wrap: wrap;
+                }
                 li {
                     width: 17%;
                     padding: 10px 0;
                     list-style: none;
+                    @media (max-width: 991px) {
+                        width: 100%;
+                        max-width: 720px;
+                        padding: 15px 0;
+                    }
                     &:hover {
                         box-shadow: 0 3px 0px 0px #f8b133;
                         border-radius: 5px;

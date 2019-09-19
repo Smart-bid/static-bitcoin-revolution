@@ -12,7 +12,7 @@
     @media (max-width: 768px) {
         text-align: center;
         border-top: 1.32vw solid #d65000;
-        padding: 28vw 4.2vw 3vw 4.2vw;
+        padding: 5vw 4.2vw 3vw 4.2vw;
     }
     & .inner {
         max-width: 360px;
@@ -20,6 +20,9 @@
         align-items: flex-start;
         flex-direction: row;
         overflow: hidden;
+        @media (max-width: 991px) {
+            max-width: 100%;
+        }
     }
 
 
@@ -176,22 +179,10 @@
             border: 1px solid #efb95f;
         }
         @media (max-width: 1200px) {
-            background-position: 0 -1.34vw;
-            margin: 0.4vw 0;
-            font-size: 1.4vw;
-            padding: 0.8vw 1.2vw;
-            padding-left: 2.8vw;
-            height: 2.8vw;
-            background-size: 2.8vw 36vw;
+            width: auto;
         }
-        @media (max-width: 768px) {
-            border-radius: 1vw;
-            margin: 0.8vw 0;
-            font-size: 4.8vw;
-            padding-left: 12vw;
-            height: 12vw;
-            background-size: 12vw 144vw;
-            background-position: 0 0vw;
+        @media (max-width: 991px) {
+            width: 95%;
             line-height: 1.2;
         }
         &::placeholder {
