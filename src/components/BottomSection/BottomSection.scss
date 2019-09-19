@@ -25,12 +25,7 @@
                     font-size: 3vw;
                 }
                 @media (max-width: 768px) {
-                    font-size: 6.86vw;
-                    position: absolute;
-                    margin-top: 4vw;
-                    color: #000000;
-                    z-index: 100;
-                    margin-left: 4vw;
+                    font-size: 21px;
                 }
             }
             .regform {
@@ -118,6 +113,13 @@
                 text-align: center;
                 letter-spacing: 1px;
                 text-transform: capitalize;
+            }
+            .time {
+                p {
+                    font-size: 14px;
+                    color: #747474;
+                    text-align: center;
+                }
             }
             .wrapper-social-networks {
                 display: flex;

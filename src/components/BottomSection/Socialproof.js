@@ -5,6 +5,30 @@ import twitterLogo from "./images/logo-twitter.png";
 
 export default class Socialproof extends Component {
 
+    constructor(props) {
+        super(props);
+        var date= this.getTimeString();
+        this.state= {
+            time: date
+        }
+    }
+    getTimeString() {
+        const date = new Date().getDate() + '/' + "0" +(new Date().getMonth() + 1) + '/' + new Date().getFullYear() + " " + new Date( Date.now()).toLocaleTimeString();
+        return date;
+    }
+    componentDidMount() {
+        const _this = this;
+        this.timer = setInterval(function(){
+            var date = _this.getTimeString();
+            _this.setState({
+                time: date
+            })
+        },1000)
+    }
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+
     render() {
         let version = this.props.version;
 
@@ -12,6 +36,9 @@ export default class Socialproof extends Component {
             <div className="social-proof">
                 <div className="container">
                     <h3 className="section-heading">{version.socialProof}</h3>
+                    <div className="time">
+                        <p>{this.state.time}</p>
+                    </div>
                     <div className="wrapper-social-networks">
                         <div className="facebook social">
                             <img src={facebookLogo} alt="" className="social-icon"/>

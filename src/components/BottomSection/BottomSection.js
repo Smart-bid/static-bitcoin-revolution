@@ -7,13 +7,9 @@ export default class BottomSection extends Component {
 
     constructor(props) {
         super(props);
-        let today = new Date(),
-            date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
         this.state = {
             notificationClass: 'fixed-notification',
-            date: date
         };
-
         setInterval(() => {
             this.setState({notificationClass: (this.state.notificationClass === 'fixed-notification') ? 'fixed-notification blinks' : 'fixed-notification'})
         }, 5000)
@@ -23,8 +19,6 @@ export default class BottomSection extends Component {
         let version = this.props.version;
         return (
             <div className='BottomSection'>
-                <h2>{this.state.date}</h2>
-
                 <div className="bottomreg">
                     <div className="container">
                         <div className="title">{version.bottomRegTitle}</div>

@@ -6,9 +6,10 @@ import poster from './poster.jpg'
 export default class VideoPlayer extends Component {
   constructor(props) {
     super(props)
-  
+    var date = this.currentDate();
     this.state = {
-       play: false
+       play: false,
+       time: date
     }
   }
   handlePlay(e) {
@@ -19,11 +20,24 @@ export default class VideoPlayer extends Component {
     this.setState({play: true});
   }
 
+  currentDate() {
+      let stamp = new Date().getTime(),
+          date = `\/Date(${stamp})\/`,
+          nowDate = new Date(parseInt(date.substr(6))),
+          result = "";
+          result += nowDate.format("dddd, mmmm d, yyyy");
+      return result;
+  }
+
+
   render () {
     let version = this.props.version;
 
     return (
       <div className="VideoPlayer">
+          <div className="current-time">
+              <span>{this.state.time}</span>
+          </div>
         {/*<div className="info">*/}
         {/*  <div className="inner">*/}
         {/*    <div className="text">{version.video}</div>*/}

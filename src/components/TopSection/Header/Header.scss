@@ -88,6 +88,14 @@
                 }
             }
         }
+        .btcwdgt {
+            position: fixed !important;
+            top: 0 !important;
+            right: 0 !important;
+            @media (max-width: 991px) {
+                display: none !important;
+            }
+        }
 
         & .title {
             font-weight: 700;

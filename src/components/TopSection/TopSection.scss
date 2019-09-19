@@ -17,7 +17,9 @@
         background-size: auto, cover;
         background-repeat: repeat, no-repeat;
         background-attachment: scroll, fixed;
-
+        @media (max-width: 768px) {
+            padding-top: 30px;
+        }
         .top-reg {
             max-width: 1170px;
             margin: 0 auto;
@@ -32,7 +34,7 @@
             }
 
             .VideoPlayer {
-                height: auto;
+                height: 100%;
                 width: 63%;
                 display: inline-block;
                 background: #000000;
@@ -40,11 +42,20 @@
                 @media (max-width: 1200px) {
                     width: 53vw;
                 }
-
                 @media (max-width: 991px) {
                     width: 100%;
                 }
-
+                .current-time {
+                    span {
+                        text-shadow: 1px 1px 3px #000;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 18px;
+                        position: relative;
+                        left: 30px;
+                        top: 15px;
+                    }
+                }
                 & .info {
                     z-index: 10;
                     position: absolute;

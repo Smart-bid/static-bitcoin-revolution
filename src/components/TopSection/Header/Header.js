@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import logo from './logo.png'
 
 export default class Header extends Component {
-
     render() {
         let version = this.props.version;
 
@@ -29,6 +28,8 @@ export default class Header extends Component {
                             </li>
                         </ul>
                     </nav>
+
+                    <div className="btcwdgt-price"></div>
                     {/*<div className="title">{version.title}</div>*/}
                     {/*<div className="subtitle">*/}
                     {/*    <span onClick={this.props.handleScroll}>{version.subtitle}</span>{version.span[0]} <br/> {version.span[1]}*/}
