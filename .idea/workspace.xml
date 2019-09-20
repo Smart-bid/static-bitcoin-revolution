@@ -2,71 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd6a0dab-8cbb-4fd5-8142-cc5c6660db2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/bcprofitmin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/bg-section-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/comment.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/like-icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/like.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/share.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/world.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/MidSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/MidSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/Team.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/seperated-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/bcprofit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/bgr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/Regform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/Regform.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/excl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/lock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/times.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/TopSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/TopSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/VideoPlayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/play_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/poster.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/badges.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/index.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/countries.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/errorMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/leadHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/validateInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/buffet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/elder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/firstArticleImg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/oneil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/secondArticleImg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/seykota.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/BottomSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/BottomSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/bcprofitmin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/bg-section-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/comment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/like-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/like.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/share.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/BottomSection/images/world.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/MidSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/MidSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/Team.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/images/testimonial-person1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/images/testimonial-person2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/images/testimonial-person3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/MidSection/seperated-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Header/bcprofit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Header/bgr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Header/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/Regform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/Regform.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/excl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/Regform/times.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/TopSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/TopSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/VideoPlayer/VideoPlayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/VideoPlayer/play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/VideoPlayer/poster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/badges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/index.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/components/TopSection/marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/helpers/countries.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/helpers/errorMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/helpers/leadHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/helpers/validateInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/pages/Page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/pages/Page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/buffet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/elder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/firstArticleImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/oneil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/secondArticleImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/seykota.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/facebook-profile1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/facebook-profile2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/facebook-profile3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/facebook-profile4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/twitter-profile1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/twitter-profile2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/img/social-avatars/twitter-profile3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lp-framework-master/example/src/versions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp-framework-master/example/src" beforeDir="false" afterPath="$PROJECT_DIR$/lp-framework-master/example/src" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +122,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -158,8 +158,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
+              <item name="lp-framework-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
+              <item name="lp-framework-master" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,6 +233,7 @@
       <workItem from="1568887799082" duration="10267000" />
       <workItem from="1568907014184" duration="615000" />
       <workItem from="1568970362448" duration="134000" />
+      <workItem from="1568983126407" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="Change 18.09">
       <created>1568880294172</created>
@@ -245,7 +267,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52634000" />
+    <option name="totallyTimeSpent" value="52891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -259,7 +281,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23987207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24253732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
