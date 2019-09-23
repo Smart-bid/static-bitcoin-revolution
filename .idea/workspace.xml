@@ -2,70 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd6a0dab-8cbb-4fd5-8142-cc5c6660db2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/bcprofitmin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/bg-section-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/comment.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/like-icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/like.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/share.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomSection/images/world.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/MidSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/MidSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/Team.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/images/testimonial-person3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MidSection/seperated-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/bcprofit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/bgr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Header/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/Regform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/Regform.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/excl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/lock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/Regform/times.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/TopSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/TopSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/VideoPlayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/play_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/VideoPlayer/poster.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/badges.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/index.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopSection/marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/countries.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/errorMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/leadHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/validateInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/buffet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/elder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/firstArticleImg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/oneil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/secondArticleImg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/seykota.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/facebook-profile4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/img/social-avatars/twitter-profile3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/versions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,40 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/BottomSection/Socialproof.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.js">
+        <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="104" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="359" column="24" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
-              <folding>
-                <element signature="e#3665#12146#0" />
-                <element signature="e#12162#13533#0" />
-                <element signature="e#13554#14052#0" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -154,13 +63,15 @@
       <find>team_members</find>
       <find>naviga</find>
       <find>cus</find>
+      <find>public</find>
     </findStrings>
     <dirStrings>
       <dir>C:\OSPanel\domains\bitcoinrevolutionapps</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bitcoinrevolutionapps-folder/src" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -182,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/versions/index.js" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSection.js" />
+        <option value="$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/index.js" />
       </list>
     </option>
   </component>
@@ -206,31 +118,13 @@
             <path>
               <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoinrevolutionapps-folder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoinrevolutionapps-folder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="BottomSection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcoinrevolutionapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcoinrevolutionapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="versions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,6 +146,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -286,7 +181,9 @@
       <workItem from="1568712618444" duration="3000" />
       <workItem from="1568739493442" duration="30831000" />
       <workItem from="1568874447793" duration="10784000" />
-      <workItem from="1568887799082" duration="10129000" />
+      <workItem from="1568887799082" duration="10267000" />
+      <workItem from="1568907014184" duration="615000" />
+      <workItem from="1569229125845" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="Change 18.09">
       <created>1568880294172</created>
@@ -316,11 +213,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568885177651</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New Structure">
+      <created>1569235751667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569235751667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51747000" />
+    <option name="totallyTimeSpent" value="57353000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,9 +237,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23987207" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -350,7 +253,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.20997123" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.20709492" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.4017258" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -426,9 +329,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src" />
+    </ignored-roots>
     <MESSAGE value="Change 18.09" />
     <MESSAGE value="Structure Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structure Done" />
+    <MESSAGE value="New Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Structure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/versions/img/elder.jpg">
@@ -642,18 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="359" column="24" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
-          <folding>
-            <element signature="e#3665#12146#0" />
-            <element signature="e#12162#13533#0" />
-            <element signature="e#13554#14052#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BottomSection/Socialproof.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -671,6 +566,55 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="359" column="24" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
+          <folding>
+            <element signature="e#3665#12146#0" />
+            <element signature="e#12162#13533#0" />
+            <element signature="e#13554#14052#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/lp-framework-master/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/languages.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lp-framework-master/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1964" column="4" selection-start-line="1964" selection-start-column="4" selection-end-line="1964" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoinrevolutionapps-folder/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
