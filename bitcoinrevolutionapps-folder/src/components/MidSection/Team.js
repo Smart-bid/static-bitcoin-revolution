@@ -1,8 +1,23 @@
 import React, { Component } from 'react'
 
+import team_1 from "../../versions/img/team/1.jpg"
+import team_2 from "../../versions/img/team/2.jpg"
+import team_3 from "../../versions/img/team/3.jpg"
+
 export default class Team extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            images: {
+                team_1,
+                team_2,
+                team_3,
+            }
+        }
+    }
     render() {
-        let version = this.props.version;
+        let version = this.props.languageManager();
+
         return (
             <div className="team">
                 <div className="container">
@@ -14,7 +29,7 @@ export default class Team extends Component{
                                     <div className="item" key={index}>
                                         <div className="wrap">
                                             <div className="img">
-                                                <img src={item.img} alt=""/>
+                                                <img src={this.state.images[item.img]} alt=""/>
                                                 <span className="absolute">{item.title}</span>
                                             </div>
                                             <div className="descr">

@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 
 export default class Aboutus extends Component {
-
     render() {
-        let version = this.props.version;
+        let version = this.props.languageManager();
 
         return (
             <div className="about-us">

@@ -3,8 +3,6 @@ import bufft from './img/buffet.jpg'
 import oneil from './img/oneil.jpg'
 import seykota from './img/seykota.jpg'
 
-//
-
 import firstTeamMember from './img/team/1.jpg'
 import secondTeamMember from './img/team/2.jpg'
 import thirdTeamMember from './img/team/3.jpg'
@@ -30,214 +28,8 @@ import ma from './img/ma.jpg'
 import gh from './img/gh.jpg'
 
 export const dk = {
-
-    disc: "- Tekstreklame -",
-    title: "Tjen millioner på bitcoin selv når crypto markedet bryder sammen",
-    subtitle: "Meld dig til i dag",
-    span: [
-        ' og se,',
-        'hvor meget du kan tjene'
-    ],
-    video: 'Klik for at se og lær hemmeligheden!',
-    topreg1: 'Register dig nedenfor',
-    topreg2: 'så fører vi dig gennem processen.',
-    fname: 'Fornavn',
-    lname: 'Efternavn',
-    email: 'Email',
-    pass: 'Kodeord',
-    req1: [
-        'Jeg giver mit samtykke til at min e-mailadresse lagres med det formål, at jeg kan modtage information og kommercielle tilbud om tradingsoftware og -platforme.'
-    ],
-    req2: [
-        'Jeg erklærer mig enig i disse ',
-        'Vilkår og Betingelser',
-        ' og denne ',
-        'Privatlivspolitik'
-    ],
-    button: 'Næste',
-    button_last: 'Kom i gang nu',
-    passtest: [
-        'Kodeordet skal være på 8-10 tegn.',
-        'Må ikke indeholde specielle tegn.',
-        'Skal indeholde mindst 1 små bogstav.',
-        'Skal indeholde mindst 1 stort bogstav.',
-        'Skal indeholde mindst 1 tal.'
-    ],
-    bottominfo: 'Du kan skifte mening til enhver tid ved at klikke på afmeldelseslinket i...',
-    more: 'mere',
-    morebox: 'bunden af enhver e-mail, du modtager fra os. Vi vil behandle dine data med respekt. Ved at klikke ovenfor giver du samtykke til, at vi må bearbejde dine data i overensstemmelse med disse vilkår.',
-    qna_title: 'Ofte stillede spørgsmål',
-    qna_subtitle: 'Her er mest almindelige spørgsmål med vores svar.',
-    qna: [
-        {
-            q: 'Er Bitcoin sikkert?',
-            a: 'Hvis du ser på Bitcoins historie, har den mange op- og nedture. Men hvis du ser nærmere efter, vil du bemærke at den efter hver nedgang stiger til en ny højde. Årsagen til dette er at Bitcoin hele tiden vokser.'
-        },
-        {
-            q: 'Hvad får vi ud af det?',
-            a: 'Hos Bitcoin Profit er vi alle Bitcoin-investorer. Derfor ved vi at jo flere folk der slutter sig til os, desto større vil Bitcoin blive.'
-        },
-        {
-            q: 'Hvad er hemmeligheden?',
-            a: 'Hemmeligheden er at der ikke er nogen hemmelighed. Tilmeld dig i dag, så viser vi dig hvor nemt det er at komme i gang med at trade Bitcoin.'
-        },
-        {
-            q: 'Er det risikabelt?',
-            a: 'Risikoniveauerne afhænger af hvordan du trader. Tilmeld dig i dag, så viser vi dig hvordan du kan maksimere din fortjeneste og minimere din risiko.'
-        },
-        {
-            q: 'Hvorfor blive en del af Bitcoin Profit?',
-            a: 'Bitcoin Profit gør det nemt for dig at veksle dine Bitcoins til rigtige penge. Vi har også en topmoderne platform, som gør trading nemmere end nogensinde før. Tror du ikke på os? Tilmeld dig i dag og se det med egne øjne. Det har aldig været nemmere at blive involveret i Bitcoin.'
-        },
-        {
-            q: 'Hvad er fidusen?',
-            a: 'Ingen fidus! Du registrerer dig blot, indbetaler et første trading-beløb på 250 dollars, så klarer vi resten. Vores platform gør det så nemt som muligt at komme i gang med at trade Bitcoin. Intet besvær, ingen stress, så du kan begynde at tjene penge med det samme.'
-        },
-    ],
-    mem_title: 'Berømte navne indenfor trading',
-    mem_subtitle: 'Der er mange store navne indenfor trading. Her er hvad nogle af de mest berømte tradere havde at sige.',
-    mems: [
-        {
-            img: elder,
-            name: 'Alexander Elder',
-            text: 'Du kan være fri. Du kan bo og arbejde hvor som helst i verden. Du kan være uafhængig af rutiner og slippe for at stå til ansvar overfor nogen.'
-        },
-        {
-            img: seykota,
-            name: 'Ed Seykota',
-            text: 'Alle får det de vil have ud af markedet, uanset om de vinder eller taber. Nogle mennesker ser ud til at kunne lide at tabe, så de vinder ved at tabe penge.'
-        },
-        {
-            img: oneil,
-            name: 'William O’Neil',
-            text: 'Det der ser ud til at være for højt og risikabelt for flertallet, går generelt højere, og det der ser lavt og billigt ud, går generelt lavere.'
-        },
-        {
-            img: bufft,
-            name: 'Warren Buffett',
-            text: 'Du behøver ikke at være raketforsker. Investering er ikke et spil, hvor fyren med en IQ på 160 slår fyren med en IQ på 130.'
-        },
-    ],
-    risk: [
-        'VIGTIGT',
-        'Indtjenings- og Juridiske Ansvarsfraskrivelser',
-        'Indtjenings- og indkomstsrepræsentationer lavet af , (kollektivt "Denne Hjemmeside" bliver kun brugt som tilstræbelsesværdige eksempler for dit indtjeningspotentiale. Deres succes beskrevet i anbefalinger og andre eksempler er usædvanlige resultater, og er dermed ikke ment som en garanti for at du og andre vil opnå de samme resultater. Individuelle resultater vil variere og er fuldstændigt baseret på din brug af .',
-        'Denne Hjemmeside er ikke ansvarlig for dine handlinger. Du har alt ansvar for dine handlinger og beslutninger når du bruger produkter og ydelser, og derfor skal du altid handle med forsigtighed og rettidig omhu. Du erklærer dig enig i, at Denne Hjemmeside ikke er forpligtet over for dig på nogen måde for resultaterne af din brug af vores produkter og ydelser. Læs vores vilkår og betingelser for at se hele vores ansvarsfraskrivelse af forpligtelser og andre restriktioner.',
-        'Denne Hjemmeside kan modtage kompensation for produkter og ydelser, de anbefaler til dig. Hvis du ikke vil have, at Denne Hjemmeside bliver kompenseret for en anbefaling, så anbefaler vi, at du søger online efter lignende produkter gennem et link, der ikke er et partner-link.'
-    ],
-    modal_title: 'Vent!',
-    modal_sub: 'Før du går…',
-    modal_text1: 'Markederne bevæger sig hurtigt. Gå ikke glip af din chance for at drage fordel af de seneste stigninger og fald.',
-    modal_text2: 'Tilmeld dig i dag og slut dig til de tusindvis af mennesker, der ændrer deres liv takket være online handel.'
-
-}
-
-export const no = {
-
-    disc: "- Advertentie -",
-    title: "Tjen millioner på bitcoin selv når kryptomarkedene krasjer",
-    subtitle: "Registrer deg i dag",
-    span: [
-        ' og se hvor mye du kan tjene'
-    ],
-    video: 'Klik for at se og lær hemmeligheden!',
-    topreg1: 'Register dig nedenfor',
-    topreg2: 'og vi vil guide deg gjennom prosessen.',
-    fname: 'Fornavn',
-    lname: 'Efternavn',
-    email: 'Email',
-    pass: 'Passord',
-    req1: [
-        'Jeg godtar at epostadressen min lagres slik at jeg kan motta informasjon og tilbud om programvare og plattformer for trading.'
-    ],
-    req2: [
-        'Jeg godtar ',
-        'Vilkår og betingelser ',
-        ' og ',
-        'Retningslinjer for personvern'
-    ],
-    button: 'Neste',
-    button_last: 'Kom i gang nå',
-    passtest: [
-        'Passord må være 8-10 tegn lange.',
-        'Må ikke inneholde spesialtegn.',
-        'Må inneholde minst 1 liten bokstav.',
-        'Må inneholde minst 1 stor bokstav.',
-        'Må inneholde minst 1 nummer.'
-    ],
-    bottominfo: 'Du kan når som helst endre dette ved å klikke på linken for å avslutte abonnementet...',
-    more: 'mer',
-    morebox: 'som du finner til slutt i alle eposter du mottar fra oss. Vi vil behandle personopplysningene dine med respekt. Ved å klikke ovenfor godtar du at vi kan behandle personopplysninger om deg i samsvar med disse betingelsene.',
-    qna_title: 'FAQ',
-    qna_subtitle: 'Her er de vanligste spørsmålene med svarene våre.',
-    qna: [
-        {
-            q: 'Er Bitcoin trygt?',
-            a: 'Dersom du ser på historien til Bitcoin, er det en berg- og dalbane. Men om du ser nærmere, vil du oppdage at etter hvert fall har den økt til en ny topp. Dette er fordi Bitcoin vokser kontinuerlig.'
-        },
-        {
-            q: 'Hva får vi igjen for det?',
-            a: 'Hos Bitcoin Profit invisterer vi alle i Bitcoin. Derfor vet vi at jo flere mennesker som blir med oss, desto mer vil Bitcoin vokse.'
-        },
-        {
-            q: 'Hva er hemmeligheten?',
-            a: 'Hemmeligheten er at det er ingen hemmelighet. Bli med i dag, og vi vil vise deg hvor enkelt det er å komme i gang med Bitcoin-trading.'
-        },
-        {
-            q: 'Er det risikabelt?',
-            a: 'Risikonivået avhenger av hvordan du handler. Bli med oss i dag, og vi vil vise deg hvordan du maksimerer profitten din og minimerer risikoen.'
-        },
-        {
-            q: 'Hvorfor bli med Bitcoin Profit?',
-            a: 'Bitcoin Profit lar deg enkelt bytte inn dine Bitcoin i ekte penger. Vi har også en toppmoderne plattform som gjør trading enklere enn noensinne. Tror du oss ikke? Bli med oss i dag og se selv. Å involvere seg i Bitcoin-revolusjonen har aldri vært enklere.'
-        },
-        {
-            q: 'Hva er haken?',
-            a: 'Ingen hake! Du bare registrerer deg, gjør et første handelsinnskudd på $250, og vi gjør resten. Plattformen vår sørger for den enkleste måten å komme i gang med Bitcoin-trading på. Ingen slit, ingen styr, slik at du kan begynne å tjene penger med det samme.'
-        },
-    ],
-    mem_title: 'Berømtheter innen trading',
-    mem_subtitle: 'Det er mange store navn innen trading. Dette er hva noen av de mest berømte traderne sier.',
-    mems: [
-        {
-            img: elder,
-            name: 'Alexander Elder',
-            text: 'Du kan være fri. Du kan bo og jobbe hvor som helst i verden. Du kan være uavhengig av rutiner og slippe å stå til ansvar ovenfor noen.'
-        },
-        {
-            img: seykota,
-            name: 'Ed Seykota',
-            text: 'Vinn eller tap. Alle får ut av markedet det de ønsker. Noen ser ut til å like å tape, så de vinner ved å tape penger.'
-        },
-        {
-            img: oneil,
-            name: 'William O’Neil',
-            text: 'Det som ser ut til å være for høyt og risikabelt for flertallet, går enda høyere. Og det som ser lavt og billig ut, vil generelt sett gå enda lavere.'
-        },
-        {
-            img: bufft,
-            name: 'Warren Buffett',
-            text: 'Du trenger ikke å være en kjernefysiker. Investering er ikke et spill hvor han som har 160 i IQ slår han som har 130 i IQ.'
-        },
-    ],
-    risk: [
-        'VIKTIG',
-        'Inntekter og Juridiske Ansvarsfraskrivelser',
-        'Inntekter og inntektsrepresentasjoner laget av, (samlet "dette nettstedet" brukes bare som verdige eksempler på inntjeningspotensialet. Deres suksesser beskrevet i anbefalinger og andre eksempler er eksepsjonelle resultater og er ikke ment å garantere at du og andre vil oppnå de samme resultatene. Individuelle resultater vil variere og er helt basert på din bruk av.',
-        'Dette nettstedet er ikke ansvarlig for dine handlinger. Du har alt ansvaret for dine handlinger og beslutninger når du bruker produkter og tjenester, så du bør alltid handle med varsomhet og rettidig omhu. Du samtykker i at dette nettstedet ikke er noen forpliktelse overfor deg for resultatene av din bruk av våre produkter og tjenester. Les våre vilkår og betingelser for å se vår fullstendige fraskrivelse av forpliktelser og andre begrensninger.',
-        'Dette nettstedet kan motta kompensasjon for produkter og tjenester de anbefaler deg. Hvis du ikke ønsker at dette nettstedet skal bli kompensert for en anbefaling, anbefaler vi at du søker etter lignende produkter på nettet gjennom en ikke-tilknyttet lenke.'
-    ],
-    modal_title: 'Vent!',
-    modal_sub: 'Før du går…',
-    modal_text1: 'Markedene er i rask bevegelse. Ikke gå glipp av sjansen din til å profittere på de siste opp- og nedgangene.',
-    modal_text2: 'Registrer deg i dag, og bli med tusenvis av mennesker som får livene sine endret takket være trading på nett.'
-
-}
-
-export const en = {
-
     disc: "- Advertorial -",
-    title: "Earn millions from bitcoin even when crypto markets are crashing",
+    title: "Denmark. Earn millions from bitcoin even when crypto markets are crashing",
     subtitle: "Join today",
     span: [
         ' and see how much you can make'
@@ -440,6 +232,224 @@ export const en = {
     modal_text1: 'The markets are moving fast. Don’t miss out on your chance to profit from the latest rises and falls.',
     modal_text2: 'Register today and join the thousands of people changing their lives thanks to online trading.'
 
+}
+
+export const en = {
+
+    disc: "- Advertorial -",
+    title: "Earn millions from bitcoin even when crypto markets are crashing",
+    subtitle: "Join today",
+    span: [
+        ' and see how much you can make'
+    ],
+    topreg1: 'Yes!',
+    topreg2: 'Unlock My Copy Of The Bitcoin Revolution',
+    topreg3: ' the process.',
+    bottomRegTitle: 'Enter Your Details To Claim A Free Spot',
+    fname: 'Your First name',
+    lname: 'Your Last name',
+    email: 'Your  E-mail Address',
+    pass: 'Password',
+    req1: [
+        'I agree to to the collection of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our',
+        'Privacy Policy.'
+    ],
+    req2: [
+        'I agree with the ',
+        'Terms & Conditions',
+        ' and ',
+        'Privacy Policy'
+    ],
+    button: 'Claim my spot',
+    button_last: 'Get Access Now',
+    passtest: [
+        'The password must be 8-10 characters long.',
+        'Must not contain special characters.',
+        'Must contain at least 1 small letter.',
+        'Must contain at least 1 capital letter.',
+        'Must contain at least 1 number.'
+    ],
+
+    //Header Menu Items
+    menu_items: [
+        {
+            link: '#video',
+            name: 'Intro'
+        },
+        {
+            link: '#Team',
+            name: 'Our Team'
+        },
+        {
+            link: '#tech',
+            name: 'The Technology'
+        },
+        {
+            link: '#Testimonals',
+            name: 'Testimonals'
+        },
+    ],
+
+    //Under Video
+    heading_title: 'Earn up to $1000 per hour or more, starting today!',
+    heading1_title: 'just download our program and',
+    heading2_title: 'E-book now to enjoy all the profits from The Bitcoin Revolution program!',
+    heading_free_title: 'FREE',
+
+    //Team
+    team_title: 'Meet Our Team',
+    team_members: [
+        {
+            img: firstTeamMember,
+            title: 'Charlie Vasquez',
+            descr: 'our CTO, one of the main reasons our software is such a success among trader of all types. Charlie has said that with all of his experience as a highly seasoned programmer, this, is the best work he has ever done',
+        },
+        {
+            img: secondTeamMember,
+            title: 'Raul Thompson',
+            descr: 'our Head Analyst, continuously cross references his long-term analysis with The Bitcoin Revolution algorithm to always assure our traders the best result possible',
+        },
+        {
+            img: thirdTeamMember,
+            title: 'Jane Fernandez',
+            descr: 'our Head of Customer Support, is always standing by with her large team at her back to assist all our traders with any technical questions they might have. We always strives for 100% client satisfaction.',
+        },
+    ],
+
+    //Reviews
+    reviews_item: [
+        {
+            name: 'Andrew Parker',
+            descr: 'Between paying off debt and keeping up with living expenses, I could barely get by. I am so thankful that a friend invited me to the Bitcoin Revolution several months ago. $43,927 is in my account and I can’t believe my eyes. I see my future as brighter than ever before',
+        },
+        {
+            name: 'Laura Bilbe',
+            descr: 'I am astounded by my results! I never thought it would ever be possible get rid of all my debt, but here I am smiling nearly 30-days later. I couldn’t be happier to report my once hefting college loan is no more',
+        },
+        {
+            name: 'Thomas Wareing',
+            descr: 'It is my pleasure to join The Bitcoin Revolution several days ago. Since, I’ve made over 7,000 in only 5-days! I feel this is about to change my life. Thank you so much to all of you from The Bitcoin Revolution',
+        }
+    ],
+
+    //Article (Some Information)
+    article_list: [
+        {
+            title: 'Our Bitcoin Revolution Technology Monitors The World’s Financial Markets',
+            descr: 'Our massive data crunching mainframes spot patterns in the worlds markets. Normal people just like you receive an automated slice of the 7.8 trillion dollars that are traded every single day! Our FREE Ultimate Guide to Crypto Currency E-book breaks down crypto trading in an easy to understand format.',
+            img: firstArticleImg,
+        },
+        {
+            title: 'What\'s In The Box?',
+            descr: 'A Crypto Trading system with easy access technology from any computer or mobile device. PC, MAC, Android, IOS and others. Crypto Experts & Analysts working 24/7 to provide you with the best support and the most profitable cryptocurrency trades. With over 500 developers & team of Expert Strategy Traders from around the world, we offer a safe and profitable crypto trading system.',
+            img: secondArticleImg,
+        },
+    ],
+    socialProof: 'Social Proof',
+
+    //Social Networks FACEBOOK
+    facebook_list: [
+        {
+            img: JoanneBowyer,
+            personName: 'Joanne Bowyer',
+            minAgo: '8 min\' ago',
+            comment: 'I have never traded before, but the The Bitcoin Revolution makes it so easy. I never thought I would say this since the crypto world can be so complicated… but you do make it so easy The Bitcoin Revolution!',
+            likes: '384',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: StevenHerold,
+            personName: 'Steven Herold',
+            minAgo: '13 min\' ago',
+            comment: 'This is exactly what I\'ve been waiting for! Your educational support and high profiting system has got me hooked for life!',
+            likes: '24',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: SylviaSchuler,
+            personName: 'Sylvia Schuler',
+            minAgo: '29 min\' ago',
+            comment: 'On my first day, I’ve made over 900 Euros so I can truly say… Finally, I found something that delivers great results!',
+            likes: '67',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+        {
+            img: RhondaLee,
+            personName: 'Rhonda Lee',
+            minAgo: '1 hour ago',
+            comment: 'Money in my account from day one, still can\'t believe it… I love your system and support The Bitcoin Revolution!',
+            likes: '12',
+            likeName: 'Like',
+            commentName: 'Comment',
+            shareName: 'Share',
+        },
+    ],
+
+    //Social Networks TWITTER
+    twitter_list: [
+        {
+            img: JuanitaBrewer,
+            personName: 'Juanita Brewer',
+            socialLink: '@ Juanita_Brewer',
+            comment: 'The Bitcoin Revolution is the only service I can trust when it comes to such a complicated subject like crypto currencies!',
+            btnName: 'Follow',
+        },
+        {
+            img: RudyPerkins,
+            personName: 'Rudy Perkins',
+            socialLink: '@ Rudy _P',
+            comment: 'I’ve trade so many Crypto services but by far this is the most impressive one.',
+            btnName: 'Follow',
+        },
+        {
+            img: ClarkRoss,
+            personName: 'Clark Ross',
+            socialLink: '@ Ross34',
+            comment: 'Your EBook is FANTASTIC! Thank you for the gift. you guys are the best',
+            btnName: 'Follow',
+        },
+    ],
+
+    //About Us
+    aboutUsTitle: 'HIGH PROFITING & FREE CRYPTO TRADING SYSTEM',
+    aboutUsDescr: 'With the recent increase of global interest in the Cryptocurrency Trading World, new traders and new crypto users, have the complicated task of selecting the correct tools for them. Here at Bitcoin Revolution, we offer all our users free tools to help them profit big in the lucrative age of Cryptocurrencies. Rest assured that all you ever wanted to achieve from Crypto Trading, is at the tip of your fingers. Now you have the opportunity to be one step ahead of even the biggest traders in the world!',
+
+    //Bottom Information
+    bottomInformation: [
+        'HIGH RISK INVESTMENT WARNING: Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please click here to read a full risk warning. Bitcoin Revolution is a trading name of Bitcoin Revolution LTD, a Technology Services Company. Bitcoin Revolution does not gain or lose profits based on your trading results and operates as a technology company. Bitcoin Revolution is not a Financial Services firm and does not operate as a financial services firm.',
+        'We are required to tell potential investors that our software\'s past performance does not necessarily predict future results, therefore you should not speculate with capital that you cannot afford to lose.',
+        'USA REGULATION NOTICE: Option trading is not regulated within the United States. Bitcoin Revolution is not supervised or regulated by any financial agencies nor US agencies. Any unregulated trading activity by U.S. residents is considered unlawful. Bitcoin Revolution does not accept customers located within the United States or holding an American citizenship.',
+        'SITE RISK DISCLOSURE: Bitcoin Revolution does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in trading Forex, CFDs and Cryptocurrencies may not be suitable for all investors. Bitcoin Revolution doesn\'t retain responsibility for any trading losses you might face as a result of using the data hosted on this site.',
+        'We have placed cookies on your computer to help improve your experience when visiting this website. You can change cookie settings on your computer at any time. Use of this website indicates your acceptance of this website\'s Privacy Policy.',
+        '© 2018 All Rights Reserved - Bitcoin Revolution',
+    ],
+    visitorAmount: '247',
+    bottomVisitorNotification: 'People are watching this page',
+
+    //Customer Earnings
+    customer: [
+        {
+            img: ma,
+            name: 'Marina Ahsanov',
+            earn: 'just earnd $481.',
+        },
+        {
+            img: gh,
+            name: 'George Hale',
+            earn: 'just earnd $1,450.',
+        },
+        {
+            img: da,
+            name: 'Dedy Aliber',
+            earn: 'just earnd $627.',
+        },
+    ],
 }
 
 export const nl = {

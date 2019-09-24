@@ -8,7 +8,6 @@ import * as errorMessage from '../../../helpers/errorMessage'
 
 import { ReactComponent as Check } from './check.svg'
 import { ReactComponent as Mark } from './excl.svg'
-import lock from './lock.svg'
 import logo from '../../BottomSection/bcprofitmin.svg'
 
 
@@ -16,14 +15,14 @@ export default class Regform extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
+        /*this.state = {
             fname: this.props.form.first_name,
             lname: this.props.form.last_name,
             email: this.props.form.email,
             check: false,
             pass: this.props.form.password,
             tel: this.props.form.phone_number,
-        }
+        }*/
 
         this.setTextInputRef = element => {
             this.currentForm = element;
@@ -41,12 +40,11 @@ export default class Regform extends Component {
 
         // Step 1
         if (form.classList.contains('one')) {
-
-            if(!form.querySelector('.accept').checked && !this.state.check) {
+            /*if(!form.querySelector('.accept').checked && !this.state.check) {
                 errorMessage.errorMessage(form.querySelector('.required'), 'Please accept this if you want to proceed');
             } else {
                 values[3] = true;
-            }
+            }*/
 
             let inputs = [...form.querySelectorAll('.inputfield')];
 
@@ -76,7 +74,7 @@ export default class Regform extends Component {
                         fname: values[0],
                         lname: values[1],
                         email: values[2],
-                        check: values[3]
+                        //check: values[3]
                     }, () => {
                         if(window.sbidTracking){
                             window.sbidTracking.settings.params.email = this.state.email;
@@ -139,8 +137,6 @@ export default class Regform extends Component {
                     })
                 }
             })
-
-
         }
     }
 
@@ -156,7 +152,6 @@ export default class Regform extends Component {
                 }
             })
         })
-
         this.props.handleStep(parseInt(e.target.getAttribute('index')));
     }
 
@@ -199,7 +194,7 @@ export default class Regform extends Component {
 
     render() {
 
-        let version = this.props.version;
+        let version = this.props.languageManager();
 
         if (this.props.step <= 3) {
             return (
@@ -222,14 +217,14 @@ export default class Regform extends Component {
                             <input className="inputfield fname" type="text" name="fname" placeholder={version.fname} onChange={this.handleFirstStepChange}/>
                             <input className="inputfield lname" type="text" name="lname" placeholder={version.lname} onChange={this.handleFirstStepChange}/>
                             <input className="inputfield email" type="text" name="email" placeholder={version.email} autoComplete='off' onChange={this.handleFirstStepChange}/>
-                            <div className='agreement'>
-                                <input type="checkbox" name="agree_one" checked />
-                                <span>{version.req1[0]} <a onClick={() => this.props.pageHandler('privacy')}>{version.req1[1]}</a></span>
-                            </div>
-                            <div className='agreement required'>
-                                <input type="checkbox" className='accept' name="agree_two" checked/>
-                                <span>{version.req2[0]} <a onClick={() => this.props.pageHandler('terms')}>{version.req2[1]}</a>{version.req2[2]}<a onClick={() => this.props.pageHandler('privacy')}>{version.req2[3]}</a>{version.req2[4]}</span>
-                            </div>
+                            {/*<div className='agreement'>*/}
+                            {/*    <input type="checkbox" name="agree_one"/>*/}
+                            {/*    <span>{version.req1[0]} <a onClick={() => this.props.pageHandler('privacy')}>{version.req1[1]}</a></span>*/}
+                            {/*</div>*/}
+                            {/*<div className='agreement required'>*/}
+                            {/*    <input type="checkbox" className='accept' name="agree_two"/>*/}
+                            {/*    <span>{version.req2[0]} <a onClick={() => this.props.pageHandler('terms')}>{version.req2[1]}</a>{version.req2[2]}<a onClick={() => this.props.pageHandler('privacy')}>{version.req2[3]}</a>{version.req2[4]}</span>*/}
+                            {/*</div>*/}
                             <button onClick={this.handleForward.bind(this)} className='start'>{version.button}</button>
                             {/*<div className="bottominfo"><img src={lock} alt="lock"/>{version.bottominfo}<div className="more" onMouseOver={() => this.infoBox.current.style.opacity = "1"} onMouseOut={() => this.infoBox.current.style.opacity = "0"} >{version.more}</div><div className="morebox" ref={this.infoBox}>{version.morebox}</div></div>*/}
                         </div>

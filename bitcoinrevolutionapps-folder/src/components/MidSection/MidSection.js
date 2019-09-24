@@ -1,42 +1,29 @@
-import React, { Component } from 'react'
-
+import React, {Component} from 'react'
 import Team from "./Team"
+import Reviews from "./Reviews"
+import firstArticleImg from "../../versions/img/firstArticleImg.jpg";
+import secondArticleImg from "../../versions/img/secondArticleImg.jpg";
 
 export default class MidSection extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            images: {
+                firstArticleImg,
+                secondArticleImg,
+            }
+        }
+    }
     render() {
-    let version = this.props.version;
-
+        let version = this.props.languageManager();
         return (
             <div className="MidSection">
 
-                <Team version={this.props.version} />
+                <Team languageManager={this.props.languageManager}/>
 
                 <div className="seperated-bg"></div>
 
-                <div className="reviews">
-                    <div className="container">
-                        <div className="reviews-list">
-                            {
-                                version.reviews_item.map((item, index) => {
-                                    return (
-                                        <div className="review-item">
-                                            <div className="wrap">
-                                                <h4 className="user-name">
-                                                    {item.name}
-                                                </h4>
-                                                <div className="descr">
-                                                    <p>
-                                                        {item.descr}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
-                </div>
+                <Reviews languageManager={this.props.languageManager}/>
 
                 <div className="articles-list">
                     <div className="container">
@@ -44,7 +31,7 @@ export default class MidSection extends Component {
                             {
                                 version.article_list.map((item, index) => {
                                     return (
-                                        <div className="article-item" id={index}>
+                                        <div className="article-item" key={index}>
                                             <div className="wrap">
                                                 <div className="info-col">
                                                     <h4 className="user-name">
@@ -55,7 +42,7 @@ export default class MidSection extends Component {
                                                     </p>
                                                 </div>
                                                 <div className="image">
-                                                    <img src={item.img} alt={item.title}/>
+                                                    <img src={this.state.images[item.img]} alt={item.title}/>
                                                 </div>
                                             </div>
                                         </div>

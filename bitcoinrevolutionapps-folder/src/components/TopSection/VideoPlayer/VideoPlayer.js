@@ -31,19 +31,11 @@ export default class VideoPlayer extends Component {
 
 
   render () {
-    let version = this.props.version;
-
     return (
       <div className="VideoPlayer">
           <div className="current-time">
               <span>{this.state.time}</span>
           </div>
-        {/*<div className="info">*/}
-        {/*  <div className="inner">*/}
-        {/*    <div className="text">{version.video}</div>*/}
-        {/*    <img src={btn} alt="play" onClick={this.handlePlay.bind(this)}/>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
         <ReactPlayer
             url={this.props.link}
             fileConfig={{

@@ -1,7 +1,16 @@
 import React, {Component} from 'react'
 
+//Facebook Import Images
 import facebookLogo from "./images/logo-facebook.png";
+import JoanneBowyer from "../../versions/img/social-avatars/facebook-profile1.jpg";
+import StevenHerold from "../../versions/img/social-avatars/facebook-profile2.jpg";
+import SylviaSchuler from "../../versions/img/social-avatars/facebook-profile3.jpg";
+import RhondaLee from "../../versions/img/social-avatars/facebook-profile4.jpg";
+//Twiiter Import Images
 import twitterLogo from "./images/logo-twitter.png";
+import JuanitaBrewer from "../../versions/img/social-avatars/twitter-profile1.jpg";
+import RudyPerkins from "../../versions/img/social-avatars/twitter-profile2.jpg";
+import ClarkRoss from "../../versions/img/social-avatars/twitter-profile3.jpg";
 
 export default class Socialproof extends Component {
 
@@ -9,7 +18,18 @@ export default class Socialproof extends Component {
         super(props);
         var date= this.getTimeString();
         this.state= {
-            time: date
+            time: date,
+            facebook_images: {
+                JoanneBowyer,
+                StevenHerold,
+                SylviaSchuler,
+                RhondaLee
+            },
+            twitter_images: {
+                JuanitaBrewer,
+                RudyPerkins,
+                ClarkRoss
+            }
         }
     }
     getTimeString() {
@@ -30,7 +50,7 @@ export default class Socialproof extends Component {
     }
 
     render() {
-        let version = this.props.version;
+        let version = this.props.languageManager();
 
         return (
             <div className="social-proof">
@@ -46,11 +66,11 @@ export default class Socialproof extends Component {
                                 {
                                     version.facebook_list.map((item, index) => {
                                         return (
-                                            <div className="post" id={index}>
+                                            <div className="post" key={index}>
                                                 <div className="wrap">
                                                     <div className="profile-info">
                                                         <div className="img">
-                                                            <img src={item.img} alt={item.personName}/>
+                                                            <img src={this.state.facebook_images[item.img]} alt={item.personName}/>
                                                         </div>
                                                         <div className="name">
                                                             <span className="title">{item.personName}</span>
@@ -87,11 +107,11 @@ export default class Socialproof extends Component {
                                 {
                                     version.twitter_list.map((item, index) => {
                                         return (
-                                            <div className="post" id={index}>
+                                            <div className="post" key={index}>
                                                 <div className="wrap">
                                                     <div className="profile-info">
                                                         <div className="img">
-                                                            <img src={item.img} alt={item.personName}/>
+                                                            <img src={this.state.twitter_images[item.img]} alt={item.personName}/>
                                                         </div>
                                                         <div className="name">
                                                             <span className="title">{item.personName}</span>

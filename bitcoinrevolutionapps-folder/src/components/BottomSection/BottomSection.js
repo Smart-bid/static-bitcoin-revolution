@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import Socialproof from "./Socialproof";
 import Aboutus from "./About";
+import deby from '../../versions/img/da.jpg'
+import marina from '../../versions/img/ma.jpg'
+import george from '../../versions/img/gh.jpg'
 
 
 export default class BottomSection extends Component {
@@ -11,9 +14,12 @@ export default class BottomSection extends Component {
         this.state = {
             random: random,
             notificationClass: 'fixed-notification',
+            images: {
+                deby,
+                marina,
+                george,
+            }
         };
-
-        let version = this.props.version;
 
         setInterval(() => {
             this.setState({notificationClass: (this.state.notificationClass === 'fixed-notification') ? 'fixed-notification blinks' : 'fixed-notification'})
@@ -38,7 +44,7 @@ export default class BottomSection extends Component {
     }
 
     render() {
-        let version = this.props.version;
+        let version = this.props.languageManager();
         return (
             <div className='BottomSection'>
                 <div className="bottomreg">
@@ -62,9 +68,9 @@ export default class BottomSection extends Component {
                     </div>
                 </div>
 
-                <Socialproof version={this.props.version} />
+                <Socialproof languageManager={this.props.languageManager} />
 
-                <Aboutus version={this.props.version} />
+                <Aboutus languageManager={this.props.languageManager} />
 
                 <div className="bottom-section">
                     <div className="container">
@@ -93,7 +99,7 @@ export default class BottomSection extends Component {
                     <div className="wrap">
                         <div className="flex">
                             <div className="image">
-                                <img src={version.customer[this.state.random].img} alt=""/>
+                                <img src={this.state.images[version.customer[this.state.random].img]} alt=""/>
                             </div>
                             <div className="info">
                                 <strong className="name">{version.customer[this.state.random].name}</strong>

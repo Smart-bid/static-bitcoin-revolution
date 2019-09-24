@@ -9,7 +9,6 @@ import video from './index.mp4'
 export default class TopSection extends Component {
     constructor(props) {
         super(props)
-
         this.regPanel = React.createRef();
     }
 
@@ -40,11 +39,11 @@ export default class TopSection extends Component {
     }
 
     render() {
-        let version = this.props.version;
+        let version = this.props.languageManager();
 
         return (
             <div className='TopSection'>
-                <Header version={this.props.version} handleScroll={this.handleScroll.bind(this)}/>
+                <Header languageManager={this.props.languageManager} handleScroll={this.handleScroll.bind(this)}/>
                 <section className="main-banner">
                     <div className="top-reg">
                         <VideoPlayer link={video} version={version} />
@@ -53,7 +52,16 @@ export default class TopSection extends Component {
                                 <span className="orange">{version.topreg1} </span>
                                 {version.topreg2}
                             </div>
-                            <Regform handlePassSync={this.props.handlePassSync} form={this.props.form} pageHandler={this.props.pageHandler} countryCode={this.props.countryCode} version={this.props.version} handleStep={this.props.handleStep} handleForward={this.props.handleForward} handleSubmit={this.props.handleSubmit} step={this.props.step}/>
+                            <Regform
+                                handlePassSync={this.props.handlePassSync}
+                                form={this.props.form}
+                                pageHandler={this.props.pageHandler}
+                                countryCode={this.props.countryCode}
+                                languageManager={this.props.languageManager}
+                                handleStep={this.props.handleStep}
+                                handleForward={this.props.handleForward}
+                                handleSubmit={this.props.handleSubmit}
+                                step={this.props.step}/>
                         </div>
                     </div>
                     <h1 className="title">
