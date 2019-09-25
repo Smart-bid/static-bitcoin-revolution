@@ -1,0 +1,204 @@
+{
+  "en": {
+    "disc": "- Advertorial -",
+    "title": "Earn millions from bitcoin even when crypto markets are crashing",
+    "subtitle": "Join today",
+    "span": "and see how much you can make", 
+        
+    "topreg1": "Yes!",
+    "topreg2": "Unlock My Copy Of The Bitcoin Revolution",
+    "topreg3": " the process.",
+    "bottomRegTitle": "Enter Your Details To Claim A Free Spot",
+    "fname": "Your First name",
+    "lname": "Your Last name",
+    "email": "Your  E-mail Address",
+    "pass": "Password",
+    "req": [
+      "I agree to to the collection of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our",
+      "Privacy Policy."
+    ],
+    "req2": [
+      "I agree with the ",
+      "Terms & Conditions",
+      " and ",
+      "Privacy Policy"
+    ],
+    "button": "Claim my spot",
+    "button_last": "Get Access Now",
+    "passtest": [
+      "The password must be 8-10 characters long.",
+      "Must not contain special characters.",
+      "Must contain at least 1 small letter.",
+      "Must contain at least 1 capital letter.",
+      "Must contain at least 1 number."
+    ],
+    "menu_items": [
+      {
+        "link": "#video",
+        "name": "Intro"
+      },
+      {
+        "link": "#Team",
+        "name": "Our Team"
+      },
+      {
+        "link": "#tech",
+        "name": "The Technology"
+      },
+      {
+        "link": "#Testimonals",
+        "name": "Testimonals"
+      }
+    ],
+    "heading_title": "Earn up to $1000 per hour or more, starting today!",
+    "heading1_title": "just download our program and",
+    "heading2_title": "E-book now to enjoy all the profits from The Bitcoin Revolution program!",
+    "heading_free_title": "FREE",
+    "team_title": "Meet Our Team",
+    "team_members": [
+      {
+        "img": "team_1",
+        "title": "Charlie Vasquez",
+        "descr": "our CTO, one of the main reasons our software is such a success among trader of all types. Charlie has said that with all of his experience as a highly seasoned programmer, this, is the best work he has ever done"
+      },
+      {
+        "img": "team_2",
+        "title": "Raul Thompson",
+        "descr": "our Head Analyst, continuously cross references his long-term analysis with The Bitcoin Revolution algorithm to always assure our traders the best result possible"
+      },
+      {
+        "img": "team_3",
+        "title": "Jane Fernandez",
+        "descr": "our Head of Customer Support, is always standing by with her large team at her back to assist all our traders with any technical questions they might have. We always strives for 100% client satisfaction."
+      }
+    ],
+
+    "reviews_item": [
+      {
+        "name": "Andrew Parker",
+        "descr": "Between paying off debt and keeping up with living expenses, I could barely get by. I am so thankful that a friend invited me to the Bitcoin Revolution several months ago. $43,927 is in my account and I can’t believe my eyes. I see my future as brighter than ever before"
+      },
+      {
+        "name": "Laura Bilbe",
+        "descr": "I am astounded by my results! I never thought it would ever be possible get rid of all my debt, but here I am smiling nearly 30-days later. I couldn’t be happier to report my once hefting college loan is no more"
+      },
+      {
+        "name": "Thomas Wareing",
+        "descr": "It is my pleasure to join The Bitcoin Revolution several days ago. Since, I’ve made over 7,000 in only 5-days! I feel this is about to change my life. Thank you so much to all of you from The Bitcoin Revolution"
+      }
+    ],
+    
+    "article_list": [
+      {
+        "title": "Our Bitcoin Revolution Technology Monitors The World’s Financial Markets",
+        "descr": "Our massive data crunching mainframes spot patterns in the worlds markets. Normal people just like you receive an automated slice of the 7.8 trillion dollars that are traded every single day! Our FREE Ultimate Guide to Crypto Currency E-book breaks down crypto trading in an easy to understand format.",
+        "img": "firstArticleImg"
+      },
+      {
+        "title": "What\"s In The Box?",
+        "descr": "A Crypto Trading system with easy access technology from any computer or mobile device. PC, MAC, Android, IOS and others. Crypto Experts & Analysts working 24/7 to provide you with the best support and the most profitable cryptocurrency trades. With over 500 developers & team of Expert Strategy Traders from around the world, we offer a safe and profitable crypto trading system.",
+        "img": "secondArticleImg"
+      }
+    ],
+    "socialProof": "Social Proof",
+    
+    "facebook_list": [
+      {
+        "img": "JoanneBowyer",
+        "personName": "Joanne Bowyer",
+        "minAgo": "8 min\" ago",
+        "comment": "I have never traded before, but the The Bitcoin Revolution makes it so easy. I never thought I would say this since the crypto world can be so complicated… but you do make it so easy The Bitcoin Revolution!",
+        "likes": "384",
+        "likeName": "Like",
+        "commentName": "Comment",
+        "shareName": "Share"
+      },
+      {
+        "img": "StevenHerold",
+        "personName": "Steven Herold",
+        "minAgo": "13 min\" ago",
+        "comment": "This is exactly what I\"ve been waiting for! Your educational support and high profiting system has got me hooked for life!",
+        "likes": "24",
+        "likeName": "Like",
+        "commentName": "Comment",
+        "shareName": "Share"
+      },
+      {
+        "img": "SylviaSchuler",
+        "personName": "Sylvia Schuler",
+        "minAgo": "29 min\" ago",
+        "comment": "On my first day, I’ve made over 900 Euros so I can truly say… Finally, I found something that delivers great results!",
+        "likes": "67",
+        "likeName": "Like",
+        "commentName": "Comment",
+        "shareName": "Share"
+      },
+      {
+        "img": "RhondaLee",
+        "personName": "Rhonda Lee",
+        "minAgo": "1 hour ago",
+        "comment": "Money in my account from day one, still can\"t believe it… I love your system and support The Bitcoin Revolution!",
+        "likes": "12",
+        "likeName": "Like",
+        "commentName": "Comment",
+        "shareName": "Share"
+      }
+    ],
+
+    "twitter_list": [
+      {
+        "img": "JuanitaBrewer",
+        "personName": "Juanita Brewer",
+        "socialLink": "@ Juanita_Brewer",
+        "comment": "The Bitcoin Revolution is the only service I can trust when it comes to such a complicated subject like crypto currencies!",
+        "btnName": "Follow"
+      },
+      {
+        "img": "RudyPerkins",
+        "personName": "Rudy Perkins",
+        "socialLink": "@ Rudy _P",
+        "comment": "I’ve trade so many Crypto services but by far this is the most impressive one.",
+        "btnName": "Follow"
+      },
+      {
+        "img": "ClarkRoss",
+        "personName": "Clark Ross",
+        "socialLink": "@ Ross34",
+        "comment": "Your EBook is FANTASTIC! Thank you for the gift. you guys are the best",
+        "btnName": "Follow"
+      }
+    ],
+
+    "aboutUsTitle": "HIGH PROFITING & FREE CRYPTO TRADING SYSTEM",
+    "aboutUsDescr": "With the recent increase of global interest in the Cryptocurrency Trading World, new traders and new crypto users, have the complicated task of selecting the correct tools for them. Here at Bitcoin Revolution, we offer all our users free tools to help them profit big in the lucrative age of Cryptocurrencies. Rest assured that all you ever wanted to achieve from Crypto Trading, is at the tip of your fingers. Now you have the opportunity to be one step ahead of even the biggest traders in the world!",
+
+    "bottomInformation": [
+      "HIGH RISK INVESTMENT WARNING: Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please click here to read a full risk warning. Bitcoin Revolution is a trading name of Bitcoin Revolution LTD, a Technology Services Company. Bitcoin Revolution does not gain or lose profits based on your trading results and operates as a technology company. Bitcoin Revolution is not a Financial Services firm and does not operate as a financial services firm.",
+      "We are required to tell potential investors that our software\"s past performance does not necessarily predict future results, therefore you should not speculate with capital that you cannot afford to lose.",
+      "USA REGULATION NOTICE: Option trading is not regulated within the United States. Bitcoin Revolution is not supervised or regulated by any financial agencies nor US agencies. Any unregulated trading activity by U.S. residents is considered unlawful. Bitcoin Revolution does not accept customers located within the United States or holding an American citizenship.",
+      "SITE RISK DISCLOSURE: Bitcoin Revolution does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in trading Forex, CFDs and Cryptocurrencies may not be suitable for all investors. Bitcoin Revolution doesn\"t retain responsibility for any trading losses you might face as a result of using the data hosted on this site.",
+      "We have placed cookies on your computer to help improve your experience when visiting this website. You can change cookie settings on your computer at any time. Use of this website indicates your acceptance of this website\"s Privacy Policy.",
+      "© 2018 All Rights Reserved - Bitcoin Revolution"
+    ],
+    "visitorAmount": "247",
+    "bottomVisitorNotification": "People are watching this page",
+
+    "customer": [
+      {
+        "img": "marina",
+        "name": "Marina Ahsanov",
+        "earn": "just earnd $481."
+      },
+      {
+        "img": "george",
+        "name": "George Hale",
+        "earn": "just earnd $1,450."
+      },
+      {
+        "img": "deby",
+        "name": "Dedy Aliber",
+        "earn": "just earnd $627."
+      }
+    ]
+  }
+}
