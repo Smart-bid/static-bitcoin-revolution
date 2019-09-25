@@ -29,7 +29,6 @@ export default class VideoPlayer extends Component {
       return result;
   }
 
-
   render () {
     return (
       <div className="VideoPlayer">

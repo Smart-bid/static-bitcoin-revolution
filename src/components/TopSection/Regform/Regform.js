@@ -72,6 +72,22 @@ export default class Regform extends Component {
                     errors: submitResponse.errors
                 })
             }
+
+            //Get Country Dial Code
+            let tel = form.querySelector('.tel');
+            var singleDialCode = "",
+                dialList = document.querySelectorAll(".country-list .country");
+            dialList.forEach(function (item, i) {
+                dialList[i].onclick = function () {
+                    singleDialCode = this.querySelector(".dial-code").innerHTML;
+                    console.log(singleDialCode);
+                    paramsToValidate = {
+                        phone_number: singleDialCode,
+                        //phone_number: singleDialCode + tel.value
+                    };
+                    console.log(paramsToValidate.phone_number + "params");
+                };
+            });
         }
         // Step 3
         else if (this.props.step === 3){
@@ -80,6 +96,11 @@ export default class Regform extends Component {
 
             let phone_number = dialCode.innerHTML + tel.value;
             phone_number = tel.value;
+
+            if(!dialCode.innerHTML) {
+                phone_number = singleDialCode + tel.value;
+            }
+            //console.log(`${phone_number} + 98-line`);
 
             paramsToValidate = {
                 phone_number: phone_number
