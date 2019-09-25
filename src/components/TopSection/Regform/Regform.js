@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import * as validateInput from '../../../helpers/validateInput'
+// import * as validateInput from '../../../helpers/validateInput'
 import IntlTelInput from 'react-intl-tel-input'
 import 'react-intl-tel-input/dist/main.css'
 
-import * as errorMessage from '../../../helpers/errorMessage'
+// import * as errorMessage from '../../../helpers/errorMessage'
 
 //import { ReactComponent as Mark } from './excl.svg'
 //import logo from '../../BottomSection/logo.png'
@@ -90,7 +90,6 @@ export default class Regform extends Component {
             if (submitResponse.success) {
                 this.props.handleStep(this.props.step + 1);
                 this.props.handleSubmit(paramsToValidate);
-
             }
             else{
                 this.setState({
@@ -98,7 +97,6 @@ export default class Regform extends Component {
                 })
             }
         }
-
     }
 
     handleBackwards(e) {
@@ -209,6 +207,11 @@ export default class Regform extends Component {
                                 {this.state.errors[0]}
                             </div>}
                             <input className="inputfield pass" type="password" maxLength="10" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
+                            <ul className='req'>
+                                {languageManager.passtest.map(li => {
+                                    return (<li key={li}>{li}</li>)
+                                })}
+                            </ul>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper three'>
@@ -232,9 +235,24 @@ export default class Regform extends Component {
             )
         } else {
             return (
-                <div className={"Regform " + (this.props.class ? this.props.class : '')} ref={this.setTextInputRef}>
-                    {/*<img src={logo} alt="lodaing" className="loading"/>*/}
+                <div className="Regform">
+                    <div className="inner">
+                        <div className='form-wrapper three'>
+                            {this.state.errors && <div style={{color: '#ff3215'}}>
+                                {this.state.errors[0]}
+                            </div>}
+                            <IntlTelInput
+                                preferredCountries={[this.props.countryCode]}
+                                containerClassName="intl-tel-input"
+                                inputClassName="inputfield tel"
+                                autoPlaceholder={true}
+                                separateDialCode={true}
+                            />
+                            <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
+                        </div>
+                    </div>
                 </div>
+
             )
         }
     }

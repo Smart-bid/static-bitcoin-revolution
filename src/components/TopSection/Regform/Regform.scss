@@ -40,13 +40,14 @@
     & .req {
         list-style-type: none;
         padding-inline-start: 0;
-
+        margin-top: 0;
+        margin-bottom: 0;
         & li {
             white-space: nowrap;
             overflow: hidden;
             font-weight: 600;
             font-size: 0.82vw;
-            margin: 0.8vw 0;
+            margin: 0.65vw 0;
             color: red;
 
             @media (max-width: 1200px) {
