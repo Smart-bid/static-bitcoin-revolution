@@ -97,10 +97,10 @@ export default class Regform extends Component {
             let phone_number = dialCode.innerHTML + tel.value;
             phone_number = tel.value;
 
-            if(!dialCode.innerHTML) {
+            /*if(!dialCode.innerHTML) {
                 phone_number = singleDialCode + tel.value;
             }
-            //console.log(`${phone_number} + 98-line`);
+            console.log(`${phone_number} + 98-line`);*/
 
             paramsToValidate = {
                 phone_number: phone_number
