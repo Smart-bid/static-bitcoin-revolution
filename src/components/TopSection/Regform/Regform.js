@@ -22,22 +22,26 @@ export default class Regform extends Component {
             password: "",
             tel: "",
             agree_1: true,
-            agree_2: true
+            agree_2: true,
+            phone_country_prefix: "",
         };
 
         this.setTextInputRef = element => {
             this.currentForm = element;
         };
-
         this.currentForm = null;
         this.infoBox = React.createRef();
         this.handleBackwards = this.handleBackwards.bind(this);
         this.handleSync = this.handleSync.bind(this);
     }
 
+    handleSelectFlag = (num, country) => {
+        this.state.phone_country_prefix = '+' + country.dialCode;
+        console.log(this.state.phone_country_prefix);
+    }
+
     handleForward(e) {
         let form = e.target.parentElement;
-
         let paramsToValidate = {};
 
         // Step 1 or 2
@@ -58,11 +62,9 @@ export default class Regform extends Component {
                 };
                 console.log(this.state.password);
             }
-
             console.log(paramsToValidate);
 
             let submitResponse = this.props.validateParams(paramsToValidate);
-
             if (submitResponse.success) {
                 this.props.handleForward(paramsToValidate);
                 this.props.handleStep(this.props.step + 1);
@@ -73,38 +75,20 @@ export default class Regform extends Component {
                 })
             }
 
-            //Get Country Dial Code
-            let tel = form.querySelector('.tel');
-            var singleDialCode = "",
-                dialList = document.querySelectorAll(".country-list .country");
-            dialList.forEach(function (item, i) {
-                dialList[i].onclick = function () {
-                    singleDialCode = this.querySelector(".dial-code").innerHTML;
-                    console.log(singleDialCode);
-                    paramsToValidate = {
-                        phone_number: singleDialCode,
-                        //phone_number: singleDialCode + tel.value
-                    };
-                    console.log(paramsToValidate.phone_number + "params");
-                };
-            });
         }
         // Step 3
         else if (this.props.step === 3){
             let tel = form.querySelector('.tel');
             let dialCode = document.getElementsByClassName(".selected-dial-code");
+            let phone_number = tel.value
 
-            let phone_number = dialCode.innerHTML + tel.value;
             phone_number = tel.value;
 
-            /*if(!dialCode.innerHTML) {
-                phone_number = singleDialCode + tel.value;
-            }
-            console.log(`${phone_number} + 98-line`);*/
-
             paramsToValidate = {
-                phone_number: phone_number
+                phone_number:  phone_number,
+                phone_country_prefix: this.state.phone_country_prefix
             };
+            console.log(paramsToValidate);
 
             let submitResponse = this.props.validateParams(paramsToValidate);
 
@@ -157,14 +141,6 @@ export default class Regform extends Component {
                 }
             })
         })
-    }
-
-    componentDidMount() {
-        /*let inputs = [...document.querySelectorAll('.inputfield')];
-
-        inputs.map(input => {
-            input.addEventListener('change', this.handleSync);
-        })*/
     }
 
     handleStepChange = (name, value) => {
@@ -245,6 +221,7 @@ export default class Regform extends Component {
                                 inputClassName="inputfield tel"
                                 autoPlaceholder={true}
                                 separateDialCode={true}
+                                onSelectFlag={this.handleSelectFlag}
                             />
                             <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
                         </div>
@@ -268,6 +245,7 @@ export default class Regform extends Component {
                                 inputClassName="inputfield tel"
                                 autoPlaceholder={true}
                                 separateDialCode={true}
+                                onSelectFlag={this.handleSelectFlag}
                             />
                             <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
                         </div>

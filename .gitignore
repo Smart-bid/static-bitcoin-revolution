@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/lp-framework-master
+/lp-framework
 /.pnp
 .pnp.js
 .idea
