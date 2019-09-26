@@ -85,7 +85,7 @@ export default class Regform extends Component {
             phone_number = tel.value;
 
             paramsToValidate = {
-                phone_number:  phone_number,
+                phone_number:  this.state.phone_country_prefix + phone_number,
                 phone_country_prefix: this.state.phone_country_prefix
             };
             console.log(paramsToValidate);
