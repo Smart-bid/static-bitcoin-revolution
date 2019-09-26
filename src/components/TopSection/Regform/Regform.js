@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
 
-// import * as validateInput from '../../../helpers/validateInput'
 import IntlTelInput from 'react-intl-tel-input'
 import 'react-intl-tel-input/dist/main.css'
-
-// import * as errorMessage from '../../../helpers/errorMessage'
-
-//import { ReactComponent as Mark } from './excl.svg'
-//import logo from '../../BottomSection/logo.png'
+import logo from '../../TopSection/Header/logo.png'
 
 
 export default class Regform extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             first_name: "",
             last_name: "",
@@ -34,6 +28,7 @@ export default class Regform extends Component {
         this.handleBackwards = this.handleBackwards.bind(this);
         this.handleSync = this.handleSync.bind(this);
     }
+
 
     handleSelectFlag = (num, country) => {
         this.state.phone_country_prefix = '+' + country.dialCode;
@@ -56,7 +51,7 @@ export default class Regform extends Component {
                 };
             }
             // Step 2
-            else if (this.props.step === 2){
+            else if (this.props.step === 2) {
                 paramsToValidate = {
                     password: this.state.password
                 };
@@ -74,7 +69,6 @@ export default class Regform extends Component {
                     errors: submitResponse.errors
                 })
             }
-
         }
         // Step 3
         else if (this.props.step === 3){
@@ -116,7 +110,6 @@ export default class Regform extends Component {
                 }
             })
         });
-
         this.props.handleStep(parseInt(e.target.getAttribute('index')));
     }
 
@@ -124,7 +117,6 @@ export default class Regform extends Component {
         let input = e.target.value;
         let inputClass = e.target.className;
         let forms = [...document.querySelectorAll('.Regform')];
-
         forms.map(form => {
             form.getElementsByClassName(inputClass)[0].value = input;
         })
@@ -132,7 +124,6 @@ export default class Regform extends Component {
 
     componentDidUpdate() {
         let forms = [...document.querySelectorAll('.Regform')];
-
         forms.map(form => {
             let steps = [...form.querySelectorAll('.form-wrapper')];
             steps.map((step, index) => {
@@ -144,7 +135,6 @@ export default class Regform extends Component {
     }
 
     handleStepChange = (name, value) => {
-
         console.log(name, value);
         this.setState({[name]: value, errors: null}, () => {
 
@@ -159,8 +149,17 @@ export default class Regform extends Component {
                     this.setState({
                         errors: submitResponse.errors
                     })
-                }
-                else{
+                    //console.log(submitResponse.errors);
+
+                    let errs = [];
+                    errs.push(submitResponse.errors);
+                    console.log(errs);
+                    errs.forEach((item,i) => {
+                        if(item[i] === "The password must be 8 characters long") {
+                            console.log("equal");
+                        }
+                    });
+                } else{
                     this.setState({
                         errors: null
                     })
@@ -169,8 +168,11 @@ export default class Regform extends Component {
         });
     };
 
-    render() {
+    componentDidMount() {
 
+    }
+
+    render() {
         let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
@@ -204,7 +206,7 @@ export default class Regform extends Component {
                                 {this.state.errors[0]}
                             </div>}
                             <input className="inputfield pass" type="password" maxLength="10" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
-                            <ul className='req'>
+                            <ul className='req' ref={this.listNotifications}>
                                 {languageManager.passtest.map(li => {
                                     return (<li key={li}>{li}</li>)
                                 })}
@@ -233,21 +235,10 @@ export default class Regform extends Component {
             )
         } else {
             return (
-                <div className="Regform">
+                <div className="Regform last-step">
                     <div className="inner">
-                        <div className='form-wrapper three'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
-                            </div>}
-                            <IntlTelInput
-                                preferredCountries={[this.props.countryCode]}
-                                containerClassName="intl-tel-input"
-                                inputClassName="inputfield tel"
-                                autoPlaceholder={true}
-                                separateDialCode={true}
-                                onSelectFlag={this.handleSelectFlag}
-                            />
-                            <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
+                        <div className='form-wrapper three last-step-logo'>
+                            <img src={logo} className="logo" alt=""/>
                         </div>
                     </div>
                 </div>

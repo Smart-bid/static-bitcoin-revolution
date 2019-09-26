@@ -13,16 +13,13 @@ export default class TopSection extends Component {
     }
 
     handleScroll() {
-
         let panel = this.regPanel.current;
         console.log(panel.offsetTop)
-
         window.scrollTo({
             top: panel.offsetTop,
             left: 0,
             behavior: 'smooth'
         })
-
     }
 
     handleClose(e) {
@@ -70,16 +67,6 @@ export default class TopSection extends Component {
                         <span className="blue-txt"><span className="free">{version.heading_free_title}</span> {version.heading2_title}</span>
                     </h1>
                 </section>
-                {/*<div className="modalscreen">*/}
-                {/*    <div className="modal">*/}
-                {/*        <div className="close" onClick={this.handleClose}>×</div>*/}
-                {/*        <div className="title">{version.modal_title}</div>*/}
-                {/*        <div className="subtitle">{version.modal_sub}</div>*/}
-                {/*        <p>{version.modal_text1}</p>*/}
-                {/*        <p>{version.modal_text2}</p>*/}
-                {/*        <Regform handlePassSync={this.props.handlePassSync}form={this.props.form} pageHandler={this.props.pageHandler} countryCode={this.props.countryCode} version={this.props.version} handleStep={this.props.handleStep} handleForward={this.props.handleForward} handleSubmit={this.props.handleSubmit} class={'inmodal'} step={this.props.step}/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </div>
         )
     }
