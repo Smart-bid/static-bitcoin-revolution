@@ -18,6 +18,7 @@ export default class Regform extends Component {
             agree_1: true,
             agree_2: true,
             phone_country_prefix: "",
+            errorIndexes: [0,1,2,3]
         };
 
         this.setTextInputRef = element => {
@@ -135,42 +136,33 @@ export default class Regform extends Component {
     }
 
     handleStepChange = (name, value) => {
-        console.log(name, value);
-        this.setState({[name]: value, errors: null}, () => {
+        let errors = null;
+        if (name === 'password') {
+            const submitResponse = this.props.validateParams({
+                password: value
+            });
 
-            console.log(this.state);
+            //console.log(value);
 
-            if(name === "password"){
-                let submitResponse = this.props.validateParams({
-                    password: value
-                });
+            let submitErrs = [];
+            let staticErrors = [
+                "The password must be 8 characters long",
+                "Must contain at least 1 small letter",
+                "Must contain at least 1 capital letter",
+                "Must contain at least 1 number",
+            ]
 
-                if (!submitResponse.success) {
-                    this.setState({
-                        errors: submitResponse.errors
-                    })
-                    //console.log(submitResponse.errors);
+            submitErrs.push(submitResponse.errors);
 
-                    let errs = [];
-                    errs.push(submitResponse.errors);
-                    console.log(errs);
-                    errs.forEach((item,i) => {
-                        if(item[i] === "The password must be 8 characters long") {
-                            console.log("equal");
-                        }
-                    });
-                } else{
-                    this.setState({
-                        errors: null
-                    })
-                }
-            }
-        });
+            const errorIndexes = submitErrs[0].reduce((errorsIndexesArray, error) => {
+                const errorIndex = staticErrors.indexOf(error);
+                errorsIndexesArray.push(errorIndex);
+                return errorsIndexesArray;
+            }, []);
+            this.setState({ errorIndexes });
+        }
+        this.setState({[name]: value, errors});
     };
-
-    componentDidMount() {
-
-    }
 
     render() {
         let languageManager = this.props.languageManager();
@@ -202,13 +194,10 @@ export default class Regform extends Component {
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper two'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
-                            </div>}
-                            <input className="inputfield pass" type="password" maxLength="10" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
-                            <ul className='req' ref={this.listNotifications}>
-                                {languageManager.passtest.map(li => {
-                                    return (<li key={li}>{li}</li>)
+                            <input className="inputfield pass" type="password" maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
+                            <ul className='req'>
+                                {languageManager.passtest.map((li, index) => {
+                                    return (<li key={index} className={this.state.errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
                                 })}
                             </ul>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>

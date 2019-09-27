@@ -27,7 +27,6 @@
     "button_last": "Get Access Now",
     "passtest": [
       "The password must be 8 characters long.",
-      "Must not contain special characters.",
       "Must contain at least 1 small letter.",
       "Must contain at least 1 capital letter.",
       "Must contain at least 1 number."
