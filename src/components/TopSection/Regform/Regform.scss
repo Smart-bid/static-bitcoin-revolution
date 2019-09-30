@@ -216,6 +216,9 @@
                 padding-left: 38% !important;
                 background-position: 0 -36vw;
             }
+            &.wrong {
+                border: 1px solid #ec1e03 !important;
+            }
         }
 
         &.email {

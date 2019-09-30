@@ -30,10 +30,9 @@ export default class Regform extends Component {
         this.handleSync = this.handleSync.bind(this);
     }
 
-
     handleSelectFlag = (num, country) => {
         this.state.phone_country_prefix = '+' + country.dialCode;
-        console.log(this.state.phone_country_prefix);
+        //console.log(this.state.phone_country_prefix);
     }
 
     handleForward(e) {
@@ -56,7 +55,6 @@ export default class Regform extends Component {
                 paramsToValidate = {
                     password: this.state.password
                 };
-                console.log(this.state.password);
             }
             console.log(paramsToValidate);
 
@@ -73,27 +71,29 @@ export default class Regform extends Component {
         }
         // Step 3
         else if (this.props.step === 3){
-            let tel = form.querySelector('.tel');
+            var tel = form.querySelector('.tel');
             let dialCode = document.getElementsByClassName(".selected-dial-code");
             let phone_number = tel.value
 
             phone_number = tel.value;
+            if(phone_number.length > 3 ) {
+                paramsToValidate = {
+                    phone_number:  this.state.phone_country_prefix + phone_number,
+                    phone_country_prefix: this.state.phone_country_prefix
+                };
 
-            paramsToValidate = {
-                phone_number:  this.state.phone_country_prefix + phone_number,
-                phone_country_prefix: this.state.phone_country_prefix
-            };
-            console.log(paramsToValidate);
+                let submitResponse = this.props.validateParams(paramsToValidate);
 
-            let submitResponse = this.props.validateParams(paramsToValidate);
-
-            if (submitResponse.success) {
-                this.props.handleStep(this.props.step + 1);
-                this.props.handleSubmit(paramsToValidate);
+                if (submitResponse.success) {
+                    this.props.handleStep(this.props.step + 1);
+                    this.props.handleSubmit(paramsToValidate);
+                }
             }
             else{
+                tel.classList.toggle("wrong");
                 this.setState({
-                    errors: submitResponse.errors
+                    //errors: submitResponse.errors
+                    errors: ""
                 })
             }
         }
@@ -141,8 +141,6 @@ export default class Regform extends Component {
             const submitResponse = this.props.validateParams({
                 password: value
             });
-
-            //console.log(value);
 
             let submitErrs = [];
             let staticErrors = [
@@ -213,6 +211,11 @@ export default class Regform extends Component {
                                 autoPlaceholder={true}
                                 separateDialCode={true}
                                 onSelectFlag={this.handleSelectFlag}
+                                onPhoneNumberChange={(status, value, countryData, number, id) => {
+                                    this.setState({
+                                        phone_country_prefix: `${countryData.dialCode}`
+                                    })
+                                }}
                             />
                             <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
                         </div>
