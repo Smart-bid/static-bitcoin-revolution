@@ -30,6 +30,23 @@
             }
             .regform {
                 .form-wrapper {
+                    .Regform {
+                        .inner {
+                            max-width: 100%;
+                            .form-wrapper {
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                input {
+                                    width: 31%;
+                                }
+                            }
+                            .intl-tel-input {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
                     form {
                         max-width: 1140px;
                         margin-left: auto;

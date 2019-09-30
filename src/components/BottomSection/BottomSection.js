@@ -6,6 +6,7 @@ import Aboutus from "./About";
 import deby from '../../versions/img/da.jpg'
 import marina from '../../versions/img/ma.jpg'
 import george from '../../versions/img/gh.jpg'
+import Regform from "../TopSection/Regform/Regform";
 
 export default class BottomSection extends Component {
 
@@ -53,17 +54,17 @@ export default class BottomSection extends Component {
                         <div className="title">{version.bottomRegTitle}</div>
                         <div className="regform">
                             <div className="form-wrapper">
-                                <form action="#">
-                                    <div className="flex">
-                                        <input className="inputfield fname" type="text" name="fname"
-                                               placeholder={version.fname}/>
-                                        <input className="inputfield lname" type="text" name="lname"
-                                               placeholder={version.lname}/>
-                                        <input className="inputfield email" type="text" name="email"
-                                               placeholder={version.email}/>
-                                    </div>
-                                    <button className='start btn-submit'>{version.button}</button>
-                                </form>
+                                <Regform
+                                    handlePassSync={this.props.handlePassSync}
+                                    form={this.props.form}
+                                    pageHandler={this.props.pageHandler}
+                                    countryCode={this.props.countryCode}
+                                    languageManager={this.props.languageManager}
+                                    handleStep={this.props.handleStep}
+                                    handleForward={this.props.handleForward}
+                                    handleSubmit={this.props.handleSubmit}
+                                    step={this.props.step}
+                                    validateParams={this.props.validateParams} />
                             </div>
                         </div>
                     </div>

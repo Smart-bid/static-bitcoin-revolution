@@ -82,7 +82,7 @@ export default class App extends ReactQueryParams {
                     <MidSection languageManager={this.props.languageManager}
                                 validateParams={this.props.validateParams}/>
                     <BottomSection form={this.state.leadData} handlePassSync={this.handlePassSync}
-                                   countryCode={this.state.countryCode}
+                                   countryCode={this.props.countryCode}
                                    handleStep={this.handleStep} step={this.state.step} handleSubmit={this.handleSubmit}
                                    pageHandler={this.pageHandler}
                                    handleForward={this.handleForward}
