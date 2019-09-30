@@ -31,6 +31,9 @@
             .regform {
                 .form-wrapper {
                     .Regform {
+                        &.last-step {
+                            display: none !important;
+                        }
                         .inner {
                             max-width: 100%;
                             .form-wrapper {
@@ -41,6 +44,10 @@
                                 }
                             }
                             .intl-tel-input {
+                                min-width: 480px;
+                                @media (max-width: 500px) {
+                                    min-width: 320px;
+                                }
                                 input {
                                     width: 100%;
                                 }
