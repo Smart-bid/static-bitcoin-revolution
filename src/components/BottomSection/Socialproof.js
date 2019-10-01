@@ -14,7 +14,6 @@ import ClarkRoss from "../../versions/img/social-avatars/twitter-profile3.jpg";
 import controlPanelBg from "../../versions/img/social-avatars/twitter-panel.jpg";
 
 export default class Socialproof extends Component {
-
     constructor(props) {
         super(props);
         var date= this.getTimeString();
@@ -34,7 +33,15 @@ export default class Socialproof extends Component {
         }
     }
     getTimeString() {
-        const date = new Date().getDate() + '/' + "0" +(new Date().getMonth() + 1) + '/' + new Date().getFullYear() + " " + new Date( Date.now()).toLocaleTimeString();
+        var currDate = new Date().getDate(),
+            currMonth = new Date().getMonth() +1;
+        if(currDate <=9) {
+            currDate = "0" + currDate;
+        }
+        if(currMonth <=9) {
+            currMonth = "0" + currMonth;
+        }
+        const date = currDate + '/' + currMonth + '/' + new Date().getFullYear() + " " + new Date( Date.now()).toLocaleTimeString();
         return date;
     }
     componentDidMount() {

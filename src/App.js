@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
 import ReactQueryParams from 'react-query-params'
-
-//import * as LeadHandler from './helpers/leadHandler'
+import WOW from 'wowjs'
 
 import TopSection from './components/TopSection/TopSection'
 import MidSection from './components/MidSection/MidSection'
 import BottomSection from './components/BottomSection/BottomSection'
-//import Page from './pages/Page'
-
-// Versions
-//import * as Version from './versions'
 
 // Pages
 import * as Pages from './pages'
@@ -27,8 +22,12 @@ export default class App extends ReactQueryParams {
             page: 'main'
         };
     }
-    //According to Readme
 
+    componentDidMount() {
+        new WOW.WOW().init();
+    }
+
+    //According to Readme
     pageHandler= (page) => {
         window.scrollTo(0, 0);
 

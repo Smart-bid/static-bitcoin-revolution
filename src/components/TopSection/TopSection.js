@@ -22,19 +22,6 @@ export default class TopSection extends Component {
         })
     }
 
-    handleClose(e) {
-        e.target.parentElement.parentElement.style.display = 'none';
-    }
-
-    componentDidMount() {
-        setTimeout(() => {
-            if (document.querySelector('.modalscreen') && window.innerWidth > 768) {
-                document.querySelector('.modalscreen').style.display = 'flex';
-            }
-        }, 
-        2000);
-    }
-
     render() {
         let version = this.props.languageManager();
 
@@ -45,7 +32,7 @@ export default class TopSection extends Component {
                     <div className="top-reg">
                         <VideoPlayer link={video} version={version} />
                         <div className="regform" ref={this.regPanel}>
-                            <div className="reg-title">
+                            <div className="reg-title wow zoomIn">
                                 <span className="orange">{version.topreg1} </span>
                                 {version.topreg2}
                             </div>
@@ -62,7 +49,7 @@ export default class TopSection extends Component {
                                 validateParams={this.props.validateParams} />
                         </div>
                     </div>
-                    <h1 className="title">
+                    <h1 className="title wow zoomIn">
                         <strong className="b">{version.heading_title}</strong><br />{version.heading1_title}
                         <span className="blue-txt"><span className="free">{version.heading_free_title}</span> {version.heading2_title}</span>
                     </h1>

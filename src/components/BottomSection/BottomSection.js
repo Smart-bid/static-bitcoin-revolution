@@ -53,7 +53,7 @@ export default class BottomSection extends Component {
                     <div className="container">
                         <div className="title">{version.bottomRegTitle}</div>
                         <div className="regform">
-                            <div className="form-wrapper">
+                            <div className="form-wrapper wow zoomIn">
                                 <Regform
                                     handlePassSync={this.props.handlePassSync}
                                     form={this.props.form}
