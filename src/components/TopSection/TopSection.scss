@@ -34,6 +34,7 @@
             }
 
             .VideoPlayer {
+                position: relative;
                 height: 100%;
                 width: 63%;
                 display: inline-block;
@@ -46,6 +47,7 @@
                     width: 100%;
                 }
                 .current-time {
+                    position: absolute;
                     span {
                         text-shadow: 1px 1px 3px #000;
                         color: #fff;

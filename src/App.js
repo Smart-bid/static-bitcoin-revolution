@@ -10,6 +10,10 @@ import BottomSection from './components/BottomSection/BottomSection'
 import * as Pages from './pages'
 
 export default class App extends ReactQueryParams {
+    componentDidMount() {
+        new WOW.WOW().init();
+    }
+
     constructor(props) {
         super(props);
         if (window.location.host.indexOf("localhost") > -1) {
@@ -23,14 +27,9 @@ export default class App extends ReactQueryParams {
         };
     }
 
-    componentDidMount() {
-        new WOW.WOW().init();
-    }
-
     //According to Readme
     pageHandler= (page) => {
         window.scrollTo(0, 0);
-
         switch (page) {
             default:
                 this.setState({page: 'main'});
@@ -51,7 +50,6 @@ export default class App extends ReactQueryParams {
                 this.setState({page: Pages.spam});
                 break;
         }
-
     };
 
     handleStep = (step) => {
@@ -67,7 +65,6 @@ export default class App extends ReactQueryParams {
     };
 
     render() {
-        //let page = this.state.page;
         if (this.state.page === 'main') {
             return (
                 <div className='App'>
@@ -90,14 +87,5 @@ export default class App extends ReactQueryParams {
                 </div>
             )
         }
-        // if (this.state.version) {
-        //     else {
-        //         return (
-        //             <Page page={this.state.page} pageHandler={this.pageHandler}></Page>
-        //         )
-        //     }
-        // } else {
-        //     return null;
-        // }
     }
 }
