@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactQueryParams from 'react-query-params'
 import WOW from 'wowjs'
 
@@ -28,7 +28,7 @@ export default class App extends ReactQueryParams {
     }
 
     //According to Readme
-    pageHandler= (page) => {
+    pageHandler = (page) => {
         window.scrollTo(0, 0);
         switch (page) {
             default:

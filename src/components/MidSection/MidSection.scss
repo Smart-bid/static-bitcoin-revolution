@@ -146,13 +146,11 @@
                     margin-left: auto;
                     margin-right: auto;
                     flex-wrap: wrap;
+                    justify-content: center;
                 }
                 .review-item {
                     max-width: 220px;
-                    padding-top: 155px;
-                    padding-right: 15px;
-                    padding-left: 15px;
-                    padding-bottom: 20px;
+                    padding: 155px 15px 20px 15px;
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-color: #ffffff;
@@ -162,8 +160,10 @@
                     border: 1px solid #ffffff;
                     overflow: hidden;
                     @media (max-width: 991px) {
-                        max-width: 100%;
+                        max-width: 275px;
                         width: 100%;
+                        padding-top: 190px;
+                        margin-bottom: 10px;
                     }
                     &:hover {
                         border: 1px solid #28388b;
@@ -173,9 +173,6 @@
                     }
                     &:nth-child(2) {
                         background-image: url("../MidSection/images/testimonial-person2.jpg");
-                        @media (max-width: 991px) {
-                            background-position: center;
-                        }
                     }
                     &:last-child {
                         background-image: url("../MidSection/images/testimonial-person3.jpg");

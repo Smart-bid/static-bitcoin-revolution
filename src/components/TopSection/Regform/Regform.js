@@ -31,8 +31,10 @@ export default class Regform extends Component {
     }
 
     handleSelectFlag = (num, country) => {
-        this.state.phone_country_prefix = '+' + country.dialCode;
-        //console.log(this.state.phone_country_prefix);
+        this.setState({
+            phone_country_prefix: '+' + country.dialCode
+        });
+        //this.state.phone_country_prefix = '+' + country.dialCode;
     }
 
     handleForward(e) {
@@ -71,11 +73,9 @@ export default class Regform extends Component {
         }
         // Step 3
         else if (this.props.step === 3){
-            var tel = form.querySelector('.tel');
-            let dialCode = document.getElementsByClassName(".selected-dial-code");
-            let phone_number = tel.value
+            let tel = form.querySelector('.tel'),
+                phone_number = tel.value;
 
-            phone_number = tel.value;
             if(phone_number.length > 3 ) {
                 paramsToValidate = {
                     phone_number:  this.state.phone_country_prefix + phone_number,
@@ -92,7 +92,6 @@ export default class Regform extends Component {
             else{
                 tel.classList.toggle("wrong");
                 this.setState({
-                    //errors: submitResponse.errors
                     errors: ""
                 })
             }
