@@ -113,68 +113,6 @@
         }
     }
 
-    & .steps {
-        display: none;
-        width: 76%;
-        margin: 0 auto;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 0.5vw;
-
-        @media (max-width: 768px) {
-            margin-bottom: 2vw;
-        }
-
-        & .num {
-            background-color: #fff;
-            height: 1.4vw;
-            width: 1.4vw;
-            text-align: center;
-            color: #2ba6df;
-            font-size: 1vw;
-            font-weight: 700;
-            border: 1px solid lightgrey;
-            border-radius: 50%;
-            line-height: 1.4;
-
-            @media (max-width: 1200px) {
-                height: 2.4vw;
-                width: 2.4vw;
-                font-size: 1.6vw;
-            }
-    
-            @media (max-width: 768px) {
-                height: 6.4vw;
-                width: 6.4vw;
-                font-size: 4.5vw;
-                line-height: 1.38;
-            }
-
-            &.check {
-                cursor: pointer;
-                background-color: #2ba6df;
-                color: #fff;
-                border: none;
-
-                & .checksvg {
-                    pointer-events: none;
-                    width: 65%;
-                    height: 75%;
-                    margin: 0.2vw;
-                    fill: #fff !important;
-
-                    @media (max-width: 1200px) {
-                        margin: 0.3vw;
-                    }
-
-                    @media (max-width: 768px) {
-                        margin: 0.8vw;
-                    }
-                }
-            }
-        }
-    }
-
     .inputfield {
         width: 93%;
         height: 60px;

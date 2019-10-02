@@ -58,21 +58,20 @@ export default class Regform extends Component {
                     password: this.state.password
                 };
             }
-            console.log(paramsToValidate);
 
             let submitResponse = this.props.validateParams(paramsToValidate);
             if (submitResponse.success) {
                 this.props.handleForward(paramsToValidate);
                 this.props.handleStep(this.props.step + 1);
             }
-            else{
+            else {
                 this.setState({
                     errors: submitResponse.errors
                 })
             }
         }
         // Step 3
-        else if (this.props.step === 3){
+        else if (this.props.step === 3) {
             let tel = form.querySelector('.tel'),
                 phone_number = tel.value;
 
@@ -83,34 +82,26 @@ export default class Regform extends Component {
                 };
 
                 let submitResponse = this.props.validateParams(paramsToValidate);
-
                 if (submitResponse.success) {
                     this.props.handleStep(this.props.step + 1);
                     this.props.handleSubmit(paramsToValidate);
                 }
             }
-            else{
-                tel.classList.toggle("wrong");
-                this.setState({
-                    errors: ""
-                })
+            else {
+                this.handleBackwards();
             }
         }
     }
 
-    handleBackwards(e) {
-        let back = parseInt(e.target.getAttribute('index'));
+    handleBackwards() {
         let forms = [...document.querySelectorAll('.Regform')];
-
         forms.map(form => {
             let steps = [...form.querySelectorAll('.form-wrapper')];
-            steps.map((step, index) => {
-                for (let i=0;i<=back;i++) {
-                    step.classList.remove('step');
-                }
+            steps.map((step) => {
+                step.classList.remove('step');
             })
         });
-        this.props.handleStep(parseInt(e.target.getAttribute('index')));
+        this.props.handleStep(1);
     }
 
     handleSync(e) {
@@ -167,24 +158,11 @@ export default class Regform extends Component {
         if (this.props.step <= 3) {
             return (
                 <div className={"Regform " + (this.props.class ? this.props.class : '')} ref={this.setTextInputRef}>
-                    <div className="steps">
-                        {[1,2,3].map(index => {
-                            if(index <= this.props.step-1) {
-                                return (
-                                    <div className="num check" key={index} index={index} onClick={this.handleBackwards}>✓</div>
-                                )
-                            } else {
-                                return (
-                                    <div className="num" key={index}>{index}</div>
-                                )
-                            }
-                        })}
-                    </div>
                     <div className='inner'>
                         <div className='form-wrapper one'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
-                            </div>}
+                            {/*{this.state.errors && <div style={{color: '#ff3215'}}>*/}
+                            {/*    {this.state.errors[0]}*/}
+                            {/*</div>}*/}
                             <input className="inputfield fname" type="text" name="first_name" placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield lname" type="text" name="last_name" placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield email" type="text" name="email" placeholder={languageManager.email} autoComplete='off' onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
@@ -200,9 +178,9 @@ export default class Regform extends Component {
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper three'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
-                            </div>}
+                            {/*{this.state.errors && <div style={{color: '#ff3215'}}>*/}
+                            {/*    {this.state.errors[0]}*/}
+                            {/*</div>}*/}
                             <IntlTelInput
                                 preferredCountries={[this.props.countryCode]}
                                 containerClassName="intl-tel-input"
