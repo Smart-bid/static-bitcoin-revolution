@@ -78,7 +78,7 @@ export default class Regform extends Component {
 
             if(phone_number.length > 3 ) {
                 paramsToValidate = {
-                    phone_number:  this.state.phone_country_prefix + phone_number,
+                    phone_number:  phone_number,
                     phone_country_prefix: this.state.phone_country_prefix
                 };
 
