@@ -160,9 +160,9 @@ export default class Regform extends Component {
                 <div className={"Regform " + (this.props.class ? this.props.class : '')} ref={this.setTextInputRef}>
                     <div className='inner'>
                         <div className='form-wrapper one'>
-                            {/*{this.state.errors && <div style={{color: '#ff3215'}}>*/}
-                            {/*    {this.state.errors[0]}*/}
-                            {/*</div>}*/}
+                            {this.state.errors && <div style={{color: '#ff3215'}}>
+                                {this.state.errors[0]}
+                            </div>}
                             <input className="inputfield fname" type="text" name="first_name" placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield lname" type="text" name="last_name" placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield email" type="text" name="email" placeholder={languageManager.email} autoComplete='off' onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
@@ -178,9 +178,9 @@ export default class Regform extends Component {
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper three'>
-                            {/*{this.state.errors && <div style={{color: '#ff3215'}}>*/}
-                            {/*    {this.state.errors[0]}*/}
-                            {/*</div>}*/}
+                            {this.state.errors && <div style={{color: '#ff3215'}}>
+                                {this.state.errors[0]}
+                            </div>}
                             <IntlTelInput
                                 preferredCountries={[this.props.countryCode]}
                                 containerClassName="intl-tel-input"
