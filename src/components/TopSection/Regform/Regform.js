@@ -18,7 +18,8 @@ export default class Regform extends Component {
             agree_1: true,
             agree_2: true,
             phone_country_prefix: "",
-            errorIndexes: [0,1,2,3]
+            errorIndexes: [0,1,2,3],
+            errors: []
         };
 
         this.setTextInputRef = element => {
@@ -75,6 +76,12 @@ export default class Regform extends Component {
             let tel = form.querySelector('.tel'),
                 phone_number = tel.value;
 
+            if(!this.phoneValidate(phone_number)) {
+                this.setState({
+                    errors: ["Enter only numbers"]
+                })
+            }
+
             if(phone_number.length > 3 ) {
                 paramsToValidate = {
                     phone_number:  phone_number,
@@ -88,9 +95,13 @@ export default class Regform extends Component {
                 }
             }
             else {
-                this.handleBackwards();
+                //this.handleBackwards();
             }
         }
+    }
+
+    phoneValidate = (value) => {
+        return !/[^0-9\-\/]/.test(value);
     }
 
     handleBackwards() {
@@ -178,9 +189,9 @@ export default class Regform extends Component {
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper three'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
-                            </div>}
+                            {/*{this.state.errors && <div style={{color: '#ff3215'}}>*/}
+                            {/*    {this.state.errors[0]}*/}
+                            {/*</div>}*/}
                             <IntlTelInput
                                 preferredCountries={[this.props.countryCode]}
                                 containerClassName="intl-tel-input"
