@@ -80,6 +80,7 @@ export default class Regform extends Component {
                 this.setState({
                     errors: ["Enter only numbers"]
                 })
+                return this.state.errors
             }
 
             if(phone_number.length > 3 ) {
@@ -160,10 +161,17 @@ export default class Regform extends Component {
             }, []);
             this.setState({ errorIndexes });
         }
-        this.setState({[name]: value, errors});
+        this.setState({[name]: value.replace(/^\s+|\s/g, ''), errors})
     };
 
     render() {
+        const {
+            first_name,
+            last_name,
+            email,
+            password
+        } = this.state;
+
         let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
@@ -174,13 +182,13 @@ export default class Regform extends Component {
                             {this.state.errors && <div style={{color: '#ff3215'}}>
                                 {this.state.errors[0]}
                             </div>}
-                            <input className="inputfield fname" type="text" name="first_name" placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
-                            <input className="inputfield lname" type="text" name="last_name" placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
-                            <input className="inputfield email" type="text" name="email" placeholder={languageManager.email} autoComplete='off' onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
+                            <input className="inputfield fname" type="text" name="first_name" value={first_name} placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
+                            <input className="inputfield lname" type="text" name="last_name" value={last_name} placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
+                            <input className="inputfield email" type="text" name="email" value={email} placeholder={languageManager.email} autoComplete='off' onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper two'>
-                            <input className="inputfield pass" type="password" maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
+                            <input className="inputfield pass" type="password" value={password} maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
                             <ul className='req'>
                                 {languageManager.passtest.map((li, index) => {
                                     return (<li key={index} className={this.state.errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
@@ -200,10 +208,15 @@ export default class Regform extends Component {
                                 separateDialCode={true}
                                 onSelectFlag={this.handleSelectFlag}
                                 onPhoneNumberChange={(status, value, countryData, number, id) => {
-                                    this.setState({
-                                        phone_country_prefix: `${countryData.dialCode}`
-                                    })
+                                    if(value.length <=15) {
+                                        this.setState({
+                                            phone_country_prefix: `${countryData.dialCode}`,
+                                            dynamicNum: value.replace(/\s\s/, '')
+                                        })
+                                    }
+
                                 }}
+                                value = {this.state.dynamicNum}
                             />
                             <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
                         </div>
