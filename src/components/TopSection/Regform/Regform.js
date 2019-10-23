@@ -59,7 +59,7 @@ export default class Regform extends Component {
             }
 
             let submitResponse = this.props.validateParams(paramsToValidate);
-            if (submitResponse.success || this.props.state.rule) {
+            if (submitResponse.success) {
                 this.props.handleForward(paramsToValidate);
                 this.props.handleStep(this.props.step + 1);
             }
@@ -161,11 +161,11 @@ export default class Regform extends Component {
             last_name,
             email,
             password,
-            errors,
+            //errors,
             errorIndexes,
             tel
 
-        } = this.props.state;
+        } = this.props.state;;
         let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
@@ -173,8 +173,8 @@ export default class Regform extends Component {
                 <div className={"Regform " + (this.props.class ? this.props.class : '')} ref={this.setTextInputRef}>
                     <div className='inner'>
                         <div className='form-wrapper one'>
-                            {errors && <div style={{color: '#ff3215'}}>
-                                {errors[0]}
+                            {this.state.errors && <div className="errors" style={{color: '#ff3215'}}>
+                                {this.state.errors[0]}
                             </div>}
                             <input className="inputfield fname" type="text" name="first_name" value={first_name} placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield lname" type="text" name="last_name" value={last_name} placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
