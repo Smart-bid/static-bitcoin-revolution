@@ -28,14 +28,12 @@ export default class Regform extends Component {
         this.currentForm = null;
         this.infoBox = React.createRef();
         this.handleBackwards = this.handleBackwards.bind(this);
-        this.handleSync = this.handleSync.bind(this);
     }
 
     handleSelectFlag = (num, country) => {
         this.setState({
             phone_country_prefix: '+' + country.dialCode
         });
-        //this.state.phone_country_prefix = '+' + country.dialCode;
     }
 
     handleForward(e) {
@@ -47,21 +45,21 @@ export default class Regform extends Component {
             // Step 1
             if(this.props.step === 1){
                 paramsToValidate = {
-                    email: this.state.email,
-                    first_name: this.state.first_name,
-                    last_name: this.state.last_name,
+                    email: !this.props.state.rule ? this.state.email : this.props.state.email,
+                    first_name: !this.props.state.rule ? this.state.first_name : this.props.state.first_name,
+                    last_name: !this.props.state.rule ? this.state.last_name : this.props.state.last_name,
                     agree_2: this.state.agree_2
                 };
             }
             // Step 2
             else if (this.props.step === 2) {
                 paramsToValidate = {
-                    password: this.state.password
+                    password: !this.props.state.rule ? this.state.password : this.props.state.password,
                 };
             }
 
             let submitResponse = this.props.validateParams(paramsToValidate);
-            if (submitResponse.success) {
+            if (submitResponse.success || this.props.state.rule) {
                 this.props.handleForward(paramsToValidate);
                 this.props.handleStep(this.props.step + 1);
             }
@@ -116,15 +114,6 @@ export default class Regform extends Component {
         this.props.handleStep(1);
     }
 
-    handleSync(e) {
-        let input = e.target.value;
-        let inputClass = e.target.className;
-        let forms = [...document.querySelectorAll('.Regform')];
-        forms.map(form => {
-            form.getElementsByClassName(inputClass)[0].value = input;
-        })
-    }
-
     componentDidUpdate() {
         let forms = [...document.querySelectorAll('.Regform')];
         forms.map(form => {
@@ -139,6 +128,7 @@ export default class Regform extends Component {
 
     handleStepChange = (name, value) => {
         let errors = null;
+        let errorIndexes = [];
         if (name === 'password') {
             const submitResponse = this.props.validateParams({
                 password: value
@@ -154,13 +144,14 @@ export default class Regform extends Component {
 
             submitErrs.push(submitResponse.errors);
 
-            const errorIndexes = submitErrs[0].reduce((errorsIndexesArray, error) => {
+            errorIndexes = submitErrs[0].reduce((errorsIndexesArray, error) => {
                 const errorIndex = staticErrors.indexOf(error);
                 errorsIndexesArray.push(errorIndex);
                 return errorsIndexesArray;
             }, []);
             this.setState({ errorIndexes });
         }
+        this.props.getInpData(name, value, errors, true, (errorIndexes.includes(-1) ? [0,1,2,3] : errorIndexes));
         this.setState({[name]: value.replace(/^\s+|\s/g, ''), errors})
     };
 
@@ -169,9 +160,12 @@ export default class Regform extends Component {
             first_name,
             last_name,
             email,
-            password
-        } = this.state;
+            password,
+            errors,
+            errorIndexes,
+            tel
 
+        } = this.props.state;
         let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
@@ -179,8 +173,8 @@ export default class Regform extends Component {
                 <div className={"Regform " + (this.props.class ? this.props.class : '')} ref={this.setTextInputRef}>
                     <div className='inner'>
                         <div className='form-wrapper one'>
-                            {this.state.errors && <div style={{color: '#ff3215'}}>
-                                {this.state.errors[0]}
+                            {errors && <div style={{color: '#ff3215'}}>
+                                {errors[0]}
                             </div>}
                             <input className="inputfield fname" type="text" name="first_name" value={first_name} placeholder={languageManager.fname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
                             <input className="inputfield lname" type="text" name="last_name" value={last_name} placeholder={languageManager.lname} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)}/>
@@ -191,7 +185,7 @@ export default class Regform extends Component {
                             <input className="inputfield pass" type="password" value={password} maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
                             <ul className='req'>
                                 {languageManager.passtest.map((li, index) => {
-                                    return (<li key={index} className={this.state.errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
+                                    return (<li key={index} className={errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
                                 })}
                             </ul>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
@@ -208,17 +202,17 @@ export default class Regform extends Component {
                                 separateDialCode={true}
                                 onSelectFlag={this.handleSelectFlag}
                                 onPhoneNumberChange={(status, value, countryData, number, id) => {
+                                    this.props.getInpNum(value)
                                     if(value.length <=15) {
                                         this.setState({
                                             phone_country_prefix: `${countryData.dialCode}`,
                                             dynamicNum: value.replace(/\s\s/, '')
                                         })
                                     }
-
                                 }}
-                                value = {this.state.dynamicNum}
+                                value = {tel}
                             />
-                            <button onClick={this.handleForward.bind(this)} className='start' >{languageManager.button_last}</button>
+                            <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button_last}</button>
                         </div>
                     </div>
                     <div className="error">

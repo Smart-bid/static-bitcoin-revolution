@@ -8,6 +8,7 @@ import BottomSection from './components/BottomSection/BottomSection'
 
 // Pages
 import * as Pages from './pages'
+import Regform from "./components/TopSection/Regform/Regform";
 
 export default class App extends ReactQueryParams {
     componentDidMount() {
@@ -23,7 +24,16 @@ export default class App extends ReactQueryParams {
         }
         this.state = {
             step: 1,
-            page: 'main'
+            page: 'main',
+
+            first_name: "",
+            last_name: "",
+            email: "",
+            password: "",
+            tel: "",
+            errors: [],
+            errorIndexes: [0,1,2,3],
+            rule: false
         };
     }
 
@@ -65,6 +75,22 @@ export default class App extends ReactQueryParams {
             .then(() => this.setState({ step: 1 }))
     };
 
+    getInpData = (name, value, errors, rule, errorIndexes) => {
+        this.setState({
+            [name]: value.replace(/^\s+|\s/g, ''),
+            errors: errors,
+            rule: rule,
+            errorIndexes: errorIndexes
+        })
+    };
+
+    getInpNum = (number) => {
+        this.setState({
+            tel: number
+        })
+
+    }
+
     render() {
         if (this.state.page === 'main') {
             return (
@@ -75,7 +101,11 @@ export default class App extends ReactQueryParams {
                                 pageHandler={this.pageHandler}
                                 handleForward={this.handleForward}
                                 languageManager={this.props.languageManager}
-                                validateParams={this.props.validateParams}/>
+                                validateParams={this.props.validateParams}
+                                getInpData={this.getInpData}
+                                getInpNum={this.getInpNum}
+                                state={this.state}
+                    />
                     <MidSection languageManager={this.props.languageManager}
                                 validateParams={this.props.validateParams}/>
                     <BottomSection form={this.state.leadData} handlePassSync={this.handlePassSync}
@@ -84,7 +114,11 @@ export default class App extends ReactQueryParams {
                                    pageHandler={this.pageHandler}
                                    handleForward={this.handleForward}
                                    languageManager={this.props.languageManager}
-                                   validateParams={this.props.validateParams}/>
+                                   validateParams={this.props.validateParams}
+                                   getInpData={this.getInpData}
+                                   getInpNum={this.getInpNum}
+                                   state={this.state}
+                    />
                 </div>
             )
         }

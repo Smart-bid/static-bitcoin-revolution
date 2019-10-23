@@ -64,7 +64,11 @@ export default class BottomSection extends Component {
                                     handleForward={this.props.handleForward}
                                     handleSubmit={this.props.handleSubmit}
                                     step={this.props.step}
-                                    validateParams={this.props.validateParams} />
+                                    validateParams={this.props.validateParams}
+                                    getInpData={this.props.getInpData}
+                                    getInpNum={this.props.getInpNum}
+                                    state={this.props.state}
+                                />
                             </div>
                         </div>
                     </div>
