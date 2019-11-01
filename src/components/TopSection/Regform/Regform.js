@@ -48,8 +48,10 @@ export default class Regform extends Component {
                     email: !this.props.state.rule ? this.state.email : this.props.state.email,
                     first_name: !this.props.state.rule ? this.state.first_name : this.props.state.first_name,
                     last_name: !this.props.state.rule ? this.state.last_name : this.props.state.last_name,
-                    agree_2: this.state.agree_2
+                    agree_2: this.state.agree_2,
+                    funnel_name: window.location.origin
                 };
+                console.log(paramsToValidate);
             }
             // Step 2
             else if (this.props.step === 2) {
@@ -206,11 +208,11 @@ export default class Regform extends Component {
                                     if(value.length <=15) {
                                         this.setState({
                                             phone_country_prefix: `${countryData.dialCode}`,
-                                            dynamicNum: value.replace(/\s\s/, '')
+                                            dynamicNum: value.replace(/[^0-9]/g, '')
                                         })
                                     }
                                 }}
-                                value = {tel}
+                                value = {tel.replace(/[^0-9]/g, '')}
                             />
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button_last}</button>
                         </div>

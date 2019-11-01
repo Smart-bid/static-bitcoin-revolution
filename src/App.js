@@ -85,10 +85,11 @@ export default class App extends ReactQueryParams {
     };
 
     getInpNum = (number) => {
-        this.setState({
-            tel: number
-        })
-
+        if(number.length <= 15) {
+            this.setState({
+                tel: number,
+            })
+        }
     }
 
     render() {
