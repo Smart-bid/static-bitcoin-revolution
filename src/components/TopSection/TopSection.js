@@ -28,7 +28,7 @@ export default class TopSection extends Component {
                 <Header languageManager={this.props.languageManager} handleScroll={this.handleScroll.bind(this)}/>
                 <section className="main-banner" id="video">
                     <div className="top-reg">
-                        <VideoPlayer link={video} version={version} />
+                        <VideoPlayer link={video} />
                         <div className="regform" ref={this.regPanel}>
                             <div className="reg-title wow zoomIn">
                                 <span className="orange">{version.topreg1} </span>

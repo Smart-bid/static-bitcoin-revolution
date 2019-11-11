@@ -8,7 +8,6 @@ import BottomSection from './components/BottomSection/BottomSection'
 
 // Pages
 import * as Pages from './pages'
-import Regform from "./components/TopSection/Regform/Regform";
 
 export default class App extends ReactQueryParams {
     constructor(props) {

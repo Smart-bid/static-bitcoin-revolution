@@ -198,6 +198,24 @@
         "name": "Dedy Aliber",
         "earn": "just earnd $627."
       }
-    ]
+    ],
+
+    "error_invalid_email":  "Error: Invalid email",
+    "error_empty_email": "Error: Empty email",
+    "error_empty_last_name": "Error: Empty last name",
+    "error_last_name_digits": "Error: Last name can’t contain numbers",
+    "error_empty_first_name": "Error: Empty first name",
+    "error_first_name_digits": "Error: First name can’t contain numbers",
+    "error_empty_password": "Error: Empty password",
+    "error_pass_length": "Error: Password length must be between 6 to 8 characters ",
+    "error_pass_special_chars": "Error: Password can’t contain any special chars",
+    "error_pass_small_letter": "Error: Password should contain at least one small letter",
+    "error_pass_cap_letter": "Error: Password should contain at least one capital letter",
+    "error_pass_one_num":"Error: Password should contain at least one number",
+    "error_accept_conditions": "Error: Please accept terms and conditions",
+    "error_real_phone": "System could not register you. Please provide your real phone number.",
+    "error_real_name": "System could not register you. Please provide your real email.",
+    "error_country": "System could not register you. This offer is not available for your country."
+
   }
 }
