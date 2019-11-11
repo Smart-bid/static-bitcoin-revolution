@@ -207,12 +207,13 @@ export default class Regform extends Component {
                             {/*    {this.state.errors[0]}*/}
                             {/*</div>}*/}
                             <IntlTelInput
-                                preferredCountries={[this.props.countryCode]}
+                                //preferredCountries={[this.props.countryCode]}
                                 containerClassName="intl-tel-input"
                                 inputClassName="inputfield tel"
                                 autoPlaceholder={true}
                                 separateDialCode={true}
                                 onSelectFlag={this.handleSelectFlag}
+                                defaultCountry={this.props.countryCode.toLowerCase()}
                                 onPhoneNumberChange={(status, value, countryData, number, id) => {
                                     this.props.getInpNum(value)
                                     if(value.length <=15) {
