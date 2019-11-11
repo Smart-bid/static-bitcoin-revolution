@@ -25,7 +25,7 @@ export default class App extends ReactQueryParams {
         this.state = {
             step: 1,
             page: 'main',
-
+            passwordEmpty: false,
             first_name: "",
             last_name: "",
             email: "",
@@ -66,6 +66,12 @@ export default class App extends ReactQueryParams {
         this.setState({step})
     };
 
+    handChangePassEmpty = () => {
+        this.setState({
+            passwordEmpty: true,
+        });
+    }
+
     handleForward = (params) => {
         this.props.handleLeadStep(params);
     };
@@ -82,6 +88,7 @@ export default class App extends ReactQueryParams {
             rule: rule,
             errorIndexes: errorIndexes
         })
+        //console.log(this.state.errorIndexes);
     };
 
     getInpNum = (number) => {
@@ -106,6 +113,7 @@ export default class App extends ReactQueryParams {
                                 getInpData={this.getInpData}
                                 getInpNum={this.getInpNum}
                                 state={this.state}
+                                handChangePassEmpty={this.handChangePassEmpty}
                     />
                     <MidSection languageManager={this.props.languageManager}
                                 validateParams={this.props.validateParams}/>
@@ -119,6 +127,7 @@ export default class App extends ReactQueryParams {
                                    getInpData={this.getInpData}
                                    getInpNum={this.getInpNum}
                                    state={this.state}
+                                   handChangePassEmpty={this.handChangePassEmpty}
                     />
                 </div>
             )

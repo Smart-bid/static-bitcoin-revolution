@@ -68,6 +68,7 @@ export default class BottomSection extends Component {
                                     getInpData={this.props.getInpData}
                                     getInpNum={this.props.getInpNum}
                                     state={this.props.state}
+                                    handChangePassEmpty={this.props.handChangePassEmpty}
                                 />
                             </div>
                         </div>

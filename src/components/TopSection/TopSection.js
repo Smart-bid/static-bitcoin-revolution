@@ -11,10 +11,8 @@ export default class TopSection extends Component {
         super(props)
         this.regPanel = React.createRef();
     }
-
     handleScroll() {
         let panel = this.regPanel.current;
-        console.log(panel.offsetTop)
         window.scrollTo({
             top: panel.offsetTop,
             left: 0,
@@ -49,6 +47,7 @@ export default class TopSection extends Component {
                                 validateParams={this.props.validateParams}
                                 getInpData={this.props.getInpData}
                                 getInpNum={this.props.getInpNum}
+                                handChangePassEmpty={this.props.handChangePassEmpty}
                                 state={this.props.state}
                             />
                         </div>

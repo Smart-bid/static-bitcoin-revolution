@@ -14,6 +14,7 @@ export default class Regform extends Component {
             email: "",
             check: false,
             password: "",
+            passwordEmpty: false,
             tel: "",
             agree_1: true,
             agree_2: true,
@@ -51,7 +52,7 @@ export default class Regform extends Component {
                     agree_2: this.state.agree_2,
                     funnel_name: window.location.origin
                 };
-                console.log(paramsToValidate);
+                //console.log(paramsToValidate);
             }
             // Step 2
             else if (this.props.step === 2) {
@@ -132,6 +133,9 @@ export default class Regform extends Component {
         let errors = null;
         let errorIndexes = [];
         if (name === 'password') {
+            const { handChangePassEmpty } = this.props;
+            handChangePassEmpty();
+
             const submitResponse = this.props.validateParams({
                 password: value
             });
@@ -150,10 +154,11 @@ export default class Regform extends Component {
                 const errorIndex = staticErrors.indexOf(error);
                 errorsIndexesArray.push(errorIndex);
                 return errorsIndexesArray;
-            }, []);
+            }, []).filter(n => n !== -1);
+
             this.setState({ errorIndexes });
         }
-        this.props.getInpData(name, value, errors, true, (errorIndexes.includes(-1) ? [0,1,2,3] : errorIndexes));
+        this.props.getInpData(name, value, errors, true, errorIndexes);
         this.setState({[name]: value.replace(/^\s+|\s/g, ''), errors})
     };
 
@@ -165,9 +170,9 @@ export default class Regform extends Component {
             password,
             //errors,
             errorIndexes,
-            tel
-
-        } = this.props.state;;
+            tel,
+            passwordEmpty,
+        } = this.props.state;
         let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
@@ -186,9 +191,14 @@ export default class Regform extends Component {
                         <div className='form-wrapper two'>
                             <input className="inputfield pass" type="password" value={password} maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
                             <ul className='req'>
-                                {languageManager.passtest.map((li, index) => {
-                                    return (<li key={index} className={errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
-                                })}
+                                {passwordEmpty ?
+                                    languageManager.passtest.map((li, index) => {
+                                        return (<li key={index} className={errorIndexes.includes(index) ? 'list' : 'ok'}>{li}</li>)
+                                    })
+                                    : languageManager.passtest.map((li, index) => {
+                                        return (<li key={index} className='list'>{li}</li>)
+                                    })
+                                }
                             </ul>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
