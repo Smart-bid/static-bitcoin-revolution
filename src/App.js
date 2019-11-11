@@ -11,17 +11,9 @@ import * as Pages from './pages'
 import Regform from "./components/TopSection/Regform/Regform";
 
 export default class App extends ReactQueryParams {
-    componentDidMount() {
-        new WOW.WOW().init();
-    }
-
     constructor(props) {
         super(props);
-        if (window.location.host.indexOf("localhost") > -1) {
-            this.setQueryParams({
-                validation: 3
-            });
-        }
+
         this.state = {
             step: 1,
             page: 'main',
@@ -35,6 +27,16 @@ export default class App extends ReactQueryParams {
             errorIndexes: [0,1,2,3],
             rule: false
         };
+    }
+
+    componentDidMount() {
+        new WOW.WOW().init();
+
+        if (window.location.host.indexOf("localhost") > -1) {
+            this.setQueryParams({
+                validation: 3
+            });
+        }
     }
 
     //According to Readme
