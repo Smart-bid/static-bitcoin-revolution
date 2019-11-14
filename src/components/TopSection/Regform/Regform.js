@@ -142,10 +142,10 @@ export default class Regform extends Component {
 
             let submitErrs = [];
             let staticErrors = [
-                "The password must be 8 characters long",
-                "Must contain at least 1 small letter",
-                "Must contain at least 1 capital letter",
-                "Must contain at least 1 number",
+                "Error: Password length must be between 6 to 8 characters",
+                "Error: Password should contain at least one small English letter",
+                "Error: Password should contain at least one capital English letter",
+                "Error: Password should contain at least one number",
             ]
 
             submitErrs.push(submitResponse.errors);
@@ -155,7 +155,6 @@ export default class Regform extends Component {
                 errorsIndexesArray.push(errorIndex);
                 return errorsIndexesArray;
             }, []).filter(n => n !== -1);
-
             this.setState({ errorIndexes });
         }
         this.props.getInpData(name, value, errors, true, errorIndexes);
@@ -218,7 +217,7 @@ export default class Regform extends Component {
                                     this.props.getInpNum(value)
                                     if(value.length <=15) {
                                         this.setState({
-                                            phone_country_prefix: `${countryData.dialCode}`,
+                                            phone_country_prefix: `+${countryData.dialCode}`,
                                             dynamicNum: value.replace(/[^0-9]/g, '')
                                         })
                                     }
