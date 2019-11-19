@@ -78,7 +78,7 @@ export default class App extends ReactQueryParams {
     };
 
     handleSubmit = (params) => {
-        this.props.onSubmit(params)
+        this.props.handleSubmit()
             .then(() => this.setState({ step: 1 }))
     };
 
@@ -104,21 +104,18 @@ export default class App extends ReactQueryParams {
         if (this.state.page === 'main') {
             return (
                 <div className='App'>
-                    <TopSection form={this.state.leadData} handlePassSync={this.handlePassSync}
-                                countryCode={this.props.countryCode}
+                    <TopSection {...this.props}
                                 handleStep={this.handleStep} step={this.state.step} handleSubmit={this.handleSubmit}
-                                pageHandler={this.pageHandler}
-                                handleForward={this.handleForward}
-                                languageManager={this.props.languageManager}
-                                validateParams={this.props.validateParams}
                                 getInpData={this.getInpData}
                                 getInpNum={this.getInpNum}
                                 state={this.state}
                                 handChangePassEmpty={this.handChangePassEmpty}
                     />
-                    <MidSection languageManager={this.props.languageManager}
+                    <MidSection {...this.props}
+                                languageManager={this.props.languageManager}
                                 validateParams={this.props.validateParams}/>
-                    <BottomSection form={this.state.leadData} handlePassSync={this.handlePassSync}
+                    <BottomSection {...this.props}
+                                   form={this.state.leadData} handlePassSync={this.handlePassSync}
                                    countryCode={this.props.countryCode}
                                    handleStep={this.handleStep} step={this.state.step} handleSubmit={this.handleSubmit}
                                    pageHandler={this.pageHandler}

@@ -35,6 +35,7 @@ export default class TopSection extends Component {
                                 {version.topreg2}
                             </div>
                             <Regform
+                                {...this.props}
                                 handlePassSync={this.props.handlePassSync}
                                 form={this.props.form}
                                 pageHandler={this.props.pageHandler}

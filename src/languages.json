@@ -25,12 +25,12 @@
     ],
     "button": "Claim my spot",
     "button_last": "Get Access Now",
-    "passtest": [
-      "The password must be 8 characters long.",
-      "Must contain at least 1 small letter.",
-      "Must contain at least 1 capital letter.",
-      "Must contain at least 1 number."
-    ],
+    "passtest": {
+      "invalidlength": "The password must be 8 characters long.",
+      "nolowercase": "Must contain at least 1 letter.",
+      "nonumber": "Must contain at least 1 number.",
+      "nouppercase": "Must contain at least 1 capital letter."
+    },
     "menu_items": [
       {
         "link": "#video",
