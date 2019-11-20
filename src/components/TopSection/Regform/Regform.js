@@ -202,9 +202,16 @@ export default class Regform extends Component {
                             <input className="inputfield pass" type="password" value={password} maxLength="8" onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
                             <ul className='req'>
                                 {Object.keys(languageManager.passtest).map((validationRule, index) => {
-                                    return (<li key={index} className={this.state.passwordErrors[validationRule] ? 'list' : passwordEmpty ? 'ok' : 'list'}>
-                                        {languageManager.passtest[validationRule]}
-                                    </li>)
+                                    if(password.length === 0) {
+                                        return (<li key={index} className="list">
+                                            {languageManager.passtest[validationRule]}
+                                        </li>)
+                                    } else {
+                                        return (<li key={index} className={this.state.passwordErrors[validationRule] ? 'list' : 'ok'}>
+                                            {languageManager.passtest[validationRule]}
+                                        </li>)
+                                    }
+
                                 })}
                             </ul>
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
