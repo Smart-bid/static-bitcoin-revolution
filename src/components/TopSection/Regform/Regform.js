@@ -32,16 +32,15 @@ export default class Regform extends Component {
     handleForward() {
         let validate = this.props.validateParams(this.props.syncState.form)
 
-        if(this.props.syncState.step === 1) {
-            console.log("Step-1")
-            this.updateValue("", 'password')
-        }
-
-        if (validate.success) this.props.setLeadData(this.props.syncState.form)
+        if (validate.success) {
+            if(this.props.syncState.step === 1) {
+                this.updateValue("", 'password')
+            }
+            this.props.setLeadData(this.props.syncState.form)
             .then(this.props.handleStep(this.props.syncState.step + 1))
             .then(() => { if (this.props.syncState.step === 2) this.props.handleLeadStep() })
             .then(() => this.props.syncErrors({password: {empty: true}}))
-        else this.props.syncErrors(validate.errors)
+        } else this.props.syncErrors(validate.errors)
     }
 
     handleSubmit() {
