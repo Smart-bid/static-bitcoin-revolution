@@ -34,23 +34,7 @@ export default class TopSection extends Component {
                                 <span className="orange">{version.topreg1} </span>
                                 {version.topreg2}
                             </div>
-                            <Regform
-                                {...this.props}
-                                handlePassSync={this.props.handlePassSync}
-                                form={this.props.form}
-                                pageHandler={this.props.pageHandler}
-                                countryCode={this.props.countryCode}
-                                languageManager={this.props.languageManager}
-                                handleStep={this.props.handleStep}
-                                handleForward={this.props.handleForward}
-                                handleSubmit={this.props.handleSubmit}
-                                step={this.props.step}
-                                validateParams={this.props.validateParams}
-                                getInpData={this.props.getInpData}
-                                getInpNum={this.props.getInpNum}
-                                handChangePassEmpty={this.props.handChangePassEmpty}
-                                state={this.props.state}
-                            />
+                            <Regform {...this.props}/>
                         </div>
                     </div>
                     <h1 className="title wow zoomIn">

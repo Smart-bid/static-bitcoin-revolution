@@ -54,23 +54,7 @@ export default class BottomSection extends Component {
                         <div className="title">{version.bottomRegTitle}</div>
                         <div className="regform">
                             <div className="form-wrapper wow zoomIn">
-                                <Regform
-                                    {...this.props}
-                                    handlePassSync={this.props.handlePassSync}
-                                    form={this.props.form}
-                                    pageHandler={this.props.pageHandler}
-                                    countryCode={this.props.countryCode}
-                                    languageManager={this.props.languageManager}
-                                    handleStep={this.props.handleStep}
-                                    handleForward={this.props.handleForward}
-                                    handleSubmit={this.props.handleSubmit}
-                                    step={this.props.step}
-                                    validateParams={this.props.validateParams}
-                                    getInpData={this.props.getInpData}
-                                    getInpNum={this.props.getInpNum}
-                                    state={this.props.state}
-                                    handChangePassEmpty={this.props.handChangePassEmpty}
-                                />
+                                <Regform {...this.props}/>
                             </div>
                         </div>
                     </div>
