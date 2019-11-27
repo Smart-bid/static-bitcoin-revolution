@@ -107,7 +107,7 @@ export default class Regform extends Component {
                                    type="password"
                                    name="password"
                                    maxLength="8"
-                                   value={password}
+                                   defaultValue={password}
                                    placeholder={languageManager.pass}
                                    onChange={e => this.updateValue(e.target.value, 'password', this.checkPass(e.target.value))}/>
                             <ul className='req'>
