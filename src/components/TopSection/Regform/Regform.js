@@ -33,9 +33,9 @@ export default class Regform extends Component {
         let validate = this.props.validateParams(this.props.syncState.form)
 
         if (validate.success) {
-            if(this.props.syncState.step === 1) {
-                this.updateValue("", 'password')
-            }
+            if(this.props.syncState.step === 1) this.updateValue("", 'password')
+            if(this.props.syncState.step === 2) this.updateValue("", 'phone_number')
+
             this.props.setLeadData(this.props.syncState.form)
             .then(this.props.handleStep(this.props.syncState.step + 1))
             .then(() => { if (this.props.syncState.step === 2) this.props.handleLeadStep() })
@@ -44,12 +44,16 @@ export default class Regform extends Component {
     }
 
     handleSubmit() {
-        this.props.handleStep(this.props.syncState.step + 1)
+        // this.props.handleStep(this.props.syncState.step + 1)
+        let validate = this.props.validateParams(this.props.syncState.form);
 
-        this.props.setLeadData(this.props.syncState.form)
-            .then(this.props.handleSubmit)
-            .then(res => (res.redirectUrl) ? window.location = res.redirectUrl : this.props.syncErrors({responseError: res.error}))
-            .then(this.props.handleStep(5))
+        if(validate.success) {
+            this.props.setLeadData(this.props.syncState.form)
+                .then(this.props.handleSubmit)
+                .then(res => (res.redirectUrl) ? window.location = res.redirectUrl : this.props.syncErrors({responseError: res.error}),this.props.handleStep(this.props.syncState.step + 1))
+                .then(this.props.handleStep(5))
+        } else this.props.syncErrors(validate.errors)
+
     }
 
     checkPass(pass) {
@@ -118,6 +122,9 @@ export default class Regform extends Component {
                             <button onClick={this.handleForward.bind(this)} className='start'>{languageManager.button}</button>
                         </div>
                         <div className='form-wrapper three'>
+                            <div className="errors-wrapper">
+                                {errorMsgs.map(arr => arr.map(error => <div key={error} className="errors">{error}</div>))}
+                            </div>
                             <IntlTelInput
                                 preferredCountries={[this.props.countryCode]}
                                 containerClassName="intl-tel-input"
