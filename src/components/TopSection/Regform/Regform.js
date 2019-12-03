@@ -127,6 +127,7 @@ export default class Regform extends Component {
                             </div>
                             <IntlTelInput
                                 preferredCountries={[this.props.countryCode]}
+                                defaultCountry={this.props.countryCode.toLowerCase()}
                                 containerClassName="intl-tel-input"
                                 inputClassName="inputfield tel"
                                 autoPlaceholder={true}
