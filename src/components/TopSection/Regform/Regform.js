@@ -50,7 +50,7 @@ export default class Regform extends Component {
         if(validate.success) {
             this.props.setLeadData(this.props.syncState.form)
                 .then(this.props.handleSubmit)
-                .then(res => (res.redirectUrl) ? window.location = res.redirectUrl : this.props.syncErrors({responseError: res.error}),this.props.handleStep(this.props.syncState.step + 1))
+                .then(res => (res.redirectUrl && res.success) ? window.location = res.redirectUrl : this.props.syncErrors({responseError: res.error}),this.props.handleStep(this.props.syncState.step + 1))
                 .then(this.props.handleStep(5))
         } else this.props.syncErrors(validate.errors)
 
