@@ -25,7 +25,7 @@ export default class Regform extends Component {
             tempForm = this.props.syncState.form
         obj[key] = value
         Object.assign(tempForm, obj)
-
+        this.props.trackStartEdit()
         new Promise((resolve, reject) => resolve(this.props.syncForms(tempForm))).then(callback)
     }
 

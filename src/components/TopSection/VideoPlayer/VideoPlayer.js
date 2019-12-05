@@ -41,9 +41,7 @@ export default class VideoPlayer extends Component {
                     controls={true}
                     width='99.8%'
                     height='100%'
-                    onClick={()=>{
-                        this.setState({removePoster: true})
-                    }}
+                    onClick={()=>{this.setState({removePoster: true},this.props.trackVideoPlay())}}
                 />
             </div>
         )
